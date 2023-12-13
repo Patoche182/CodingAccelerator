@@ -1,0 +1,15 @@
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\bin\Debug\net8.0\Terre01.exe
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\bin\Debug\net8.0\Terre01.deps.json
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\bin\Debug\net8.0\Terre01.runtimeconfig.json
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\bin\Debug\net8.0\Terre01.dll
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\bin\Debug\net8.0\Terre01.pdb
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\Terre01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\Terre01.AssemblyInfoInputs.cache
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\Terre01.AssemblyInfo.cs
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\Terre01.csproj.CoreCompileInputs.cache
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\Terre01.sourcelink.json
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\Terre01.dll
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\refint\Terre01.dll
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\Terre01.pdb
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\Terre01.genruntimeconfig.cache
+C:\Users\phanne\source\repos\CodingAccelerator\Terre01\obj\Debug\net8.0\ref\Terre01.dll
