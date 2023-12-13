@@ -1,10 +1,7 @@
 # CodingAccelerator
 Voici les épreuves !!!
 
-
 |||  Épreuve de la Terre  |||
-
-
 
 Consignes
 
