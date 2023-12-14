@@ -1,6 +1,6 @@
-// L’alphabet
-//Créez un programme qui affiche l’alphabet en lettres minuscules suivi d’un retour à la ligne.
-//Exemples d’utilisation :
+// 00 - Lâ€™ALPHABET - 00
+//CrÃ©ez un programme qui affiche lâ€™alphabet en lettres minuscules suivi dâ€™un retour Ã  la ligne.
+//Exemples dâ€™utilisation :
 //$> python exo.py
 //abcdefghijklmnopqrstuvwxyz
 //$>
