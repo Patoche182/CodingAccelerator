@@ -1,11 +1,11 @@
-// 00 - L’ALPHABET - 00
+/* 00 - L’ALPHABET - 00
 
-//Créez un programme qui affiche l’alphabet en lettres minuscules suivi d’un retour à la ligne.
-//Exemples d’utilisation :
-//$> python exo.py
-//abcdefghijklmnopqrstuvwxyz
-//$>
-//Attention : votre programme devra utiliser une boucle.
+Créez un programme qui affiche l’alphabet en lettres minuscules suivi d’un retour à la ligne.
+Exemples d’utilisation :
+$> python exo.py
+abcdefghijklmnopqrstuvwxyz
+$>
+Attention : votre programme devra utiliser une boucle. */
 
 class Terre00
 {
@@ -19,6 +19,8 @@ class Terre00
         Console.WriteLine();
     }
 }
+
+// Méthode 2 :
 
 //class Terre00
 //{
