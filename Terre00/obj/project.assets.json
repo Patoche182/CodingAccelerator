@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\phanne\\.nuget\\packages\\": {},
+    "C:\\Users\\patri\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phanne\\source\\repos\\CodingAccelerator\\Terre00\\Terre00.csproj",
+      "projectUniqueName": "C:\\Users\\patri\\Source\\Repos\\CodingAccelerator\\Terre00\\Terre00.csproj",
       "projectName": "Terre00",
-      "projectPath": "C:\\Users\\phanne\\source\\repos\\CodingAccelerator\\Terre00\\Terre00.csproj",
-      "packagesPath": "C:\\Users\\phanne\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phanne\\source\\repos\\CodingAccelerator\\Terre00\\obj\\",
+      "projectPath": "C:\\Users\\patri\\Source\\Repos\\CodingAccelerator\\Terre00\\Terre00.csproj",
+      "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\patri\\Source\\Repos\\CodingAccelerator\\Terre00\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\phanne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
