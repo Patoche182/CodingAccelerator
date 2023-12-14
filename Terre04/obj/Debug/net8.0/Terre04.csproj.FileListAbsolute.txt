@@ -1,0 +1,5 @@
+C:\Users\patri\source\repos\CodingAccelerator\Terre04\obj\Debug\net8.0\Terre04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patri\source\repos\CodingAccelerator\Terre04\obj\Debug\net8.0\Terre04.AssemblyInfoInputs.cache
+C:\Users\patri\source\repos\CodingAccelerator\Terre04\obj\Debug\net8.0\Terre04.AssemblyInfo.cs
+C:\Users\patri\source\repos\CodingAccelerator\Terre04\obj\Debug\net8.0\Terre04.csproj.CoreCompileInputs.cache
+C:\Users\patri\source\repos\CodingAccelerator\Terre04\obj\Debug\net8.0\Terre04.sourcelink.json

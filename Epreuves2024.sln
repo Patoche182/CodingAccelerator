@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terre04", "Terre04\Terre04.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terre05", "Terre05\Terre05.csproj", "{CAC549A6-5459-443C-A0C7-5960D639BE8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terre06", "Terre06\Terre06.csproj", "{A0DDA72A-5BB0-4A90-9A0A-184F1499036B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terre06", "Terre06\Terre06.csproj", "{A0DDA72A-5BB0-4A90-9A0A-184F1499036B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

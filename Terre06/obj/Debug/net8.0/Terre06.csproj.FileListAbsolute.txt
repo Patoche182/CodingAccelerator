@@ -3,3 +3,8 @@ C:\Users\phanne\source\repos\CodingAccelerator\Terre06\obj\Debug\net8.0\Terre06.
 C:\Users\phanne\source\repos\CodingAccelerator\Terre06\obj\Debug\net8.0\Terre06.AssemblyInfo.cs
 C:\Users\phanne\source\repos\CodingAccelerator\Terre06\obj\Debug\net8.0\Terre06.csproj.CoreCompileInputs.cache
 C:\Users\phanne\source\repos\CodingAccelerator\Terre06\obj\Debug\net8.0\Terre06.sourcelink.json
+C:\Users\patri\source\repos\CodingAccelerator\Terre06\obj\Debug\net8.0\Terre06.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patri\source\repos\CodingAccelerator\Terre06\obj\Debug\net8.0\Terre06.AssemblyInfoInputs.cache
+C:\Users\patri\source\repos\CodingAccelerator\Terre06\obj\Debug\net8.0\Terre06.AssemblyInfo.cs
+C:\Users\patri\source\repos\CodingAccelerator\Terre06\obj\Debug\net8.0\Terre06.csproj.CoreCompileInputs.cache
+C:\Users\patri\source\repos\CodingAccelerator\Terre06\obj\Debug\net8.0\Terre06.sourcelink.json

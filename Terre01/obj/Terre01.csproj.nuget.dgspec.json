@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patri\\Source\\Repos\\CodingAccelerator\\Terre01\\Terre01.csproj": {}
+    "C:\\Users\\patri\\source\\repos\\CodingAccelerator\\Terre01\\Terre01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patri\\Source\\Repos\\CodingAccelerator\\Terre01\\Terre01.csproj": {
+    "C:\\Users\\patri\\source\\repos\\CodingAccelerator\\Terre01\\Terre01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patri\\Source\\Repos\\CodingAccelerator\\Terre01\\Terre01.csproj",
+        "projectUniqueName": "C:\\Users\\patri\\source\\repos\\CodingAccelerator\\Terre01\\Terre01.csproj",
         "projectName": "Terre01",
-        "projectPath": "C:\\Users\\patri\\Source\\Repos\\CodingAccelerator\\Terre01\\Terre01.csproj",
+        "projectPath": "C:\\Users\\patri\\source\\repos\\CodingAccelerator\\Terre01\\Terre01.csproj",
         "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patri\\Source\\Repos\\CodingAccelerator\\Terre01\\obj\\",
+        "outputPath": "C:\\Users\\patri\\source\\repos\\CodingAccelerator\\Terre01\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

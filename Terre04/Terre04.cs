@@ -1,4 +1,5 @@
 // 04 - PAIR OU IMPAIR - 04
+
 //Créez un programme qui permet de déterminer si l’argument donné est un entier pair ou impair..
 //Exemples d’utilisation :
 //$> ruby exo.rb 2
