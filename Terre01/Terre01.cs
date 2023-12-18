@@ -1,11 +1,12 @@
-// 01 - NOM DU PROGRAMME - 01
+/* 01 - NOM DU PROGRAMME - 01
 
-//Créez un programme qui affiche son nom de fichier.
-//Exemples d’utilisation :
-//$> node exo.js
-//exo.js
-//$> node crevette.js
-//crevette.js
+Créez un programme qui affiche son nom de fichier.
+Exemples d’utilisation :
+    $> node exo.js
+    exo.js
+    $> node crevette.js
+    crevette.js
+*/
 
 class Terre01
 {

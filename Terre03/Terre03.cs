@@ -1,11 +1,12 @@
-// 03 - L’ALPHABET A PARTIR DE - 03
+/* 03 - L’ALPHABET A PARTIR DE - 03
 
-//Créez un programme qui affiche l’alphabet à partir de la lettre donnée en argument en lettres minuscules suivi d’un retour à la ligne.
-//Exemples d’utilisation :
-//$> python exo.py n
-//nopqrstuvwxyz
-//$>
-//Attention : votre programme devra utiliser une boucle.
+Créez un programme qui affiche l’alphabet à partir de la lettre donnée en argument en lettres minuscules suivi d’un retour à la ligne.
+Exemples d’utilisation :
+    $> python exo.py n
+    nopqrstuvwxyz
+    $>
+Attention : votre programme devra utiliser une boucle.
+*/
 class Terre03
 {
     static void Main()
