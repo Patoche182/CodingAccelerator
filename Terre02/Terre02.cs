@@ -13,10 +13,14 @@ class Terre02
 {
     static void Main()
     {
-        string lettreAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        foreach (char lettre in lettreAlphabet)
+        string[] args = { "Je s'appelle Groot !", "Je m'apelle Patrice", "Alex me saoule" };
+        GetArgs(args);
+    }
+    static void GetArgs(string[] args)
+    {
+        for (int i = 0; i < args.Length; i++)
         {
-            Console.Write(lettre.ToString().ToLower());
+            Console.WriteLine(args[i]);
         }
         Console.WriteLine();
     }

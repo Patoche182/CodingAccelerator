@@ -6,3 +6,24 @@
 //nopqrstuvwxyz
 //$>
 //Attention : votre programme devra utiliser une boucle.
+class Terre03
+{
+    static void Main()
+    {
+        GetAlphabetFromLetter('P');
+    }
+
+    static void GetAlphabetFromLetter(char letter)
+    {
+        letter = Convert.ToChar(letter.ToString().ToLower());
+        string lettreAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        foreach (char i in lettreAlphabet.ToLower())
+        {
+            if (letter < i)
+            {
+            Console.Write(i);
+            }
+        }
+        Console.WriteLine();
+    }
+}

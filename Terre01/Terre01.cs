@@ -11,11 +11,8 @@ class Terre01
 {
     static void Main()
     {
-        string lettreAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        foreach (char lettre in lettreAlphabet)
-        {
-            Console.Write(lettre.ToString().ToLower());
-        }
-        Console.WriteLine();
+        Console.WriteLine($"Le nom du programme est :  {AppDomain.CurrentDomain.FriendlyName}");
+        Console.ReadLine();
+
     }
 }

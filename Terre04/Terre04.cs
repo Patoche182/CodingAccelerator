@@ -13,3 +13,36 @@
 //Attention : gérez aussi les entiers négatifs.
 //Fonctions interdites: 
 //-En Ruby: even? et odd ?
+
+class Terre04
+{
+    static void Main()
+    {
+        do
+        {
+            Console.WriteLine("Donne le chiffre:");
+            string response = Console.ReadLine();
+            int x;
+            if (int.TryParse(response, out x))
+            {
+                Console.WriteLine(PairOuImpair(x));
+            }
+            else
+            {
+                Console.WriteLine("Tu me la mettras pas à l'envers mon petit patouille");
+            }
+        } while (true);
+    }
+
+    static string PairOuImpair(int nombre)
+    {
+        if (nombre % 2 == 0)
+        {
+            return "Pair !";
+        }
+        else
+        {
+            return "Impair !";
+        }
+    }
+}

@@ -19,6 +19,7 @@ class Terre00
             Console.Write(lettre.ToString().ToLower());
         }
         Console.WriteLine();
+        Console.ReadLine();
     }
 }
 
