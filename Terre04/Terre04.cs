@@ -2,14 +2,14 @@
 
 //Créez un programme qui permet de déterminer si l’argument donné est un entier pair ou impair..
 //Exemples d’utilisation :
-//$> ruby exo.rb 2
-//pair
-//$> ruby exo.rb 5
-//impair
-//$> ruby exo.rb Bonjour
-//Tu ne me la mettras pas à l’envers.
-//$> ruby exo.rb
-//Tu ne me la mettras pas à l’envers.
+    //$> ruby exo.rb 2
+    //pair
+    //$> ruby exo.rb 5
+    //impair
+    //$> ruby exo.rb Bonjour
+    //Tu ne me la mettras pas à l’envers.
+    //$> ruby exo.rb
+    //Tu ne me la mettras pas à l’envers.
 //Attention : gérez aussi les entiers négatifs.
 //Fonctions interdites: 
 //-En Ruby: even? et odd ?
@@ -20,16 +20,16 @@ class Terre04
     {
         do
         {
-            Console.WriteLine("Donne le chiffre:");
+            Console.WriteLine("Donne un chiffre:");
             string response = Console.ReadLine();
             int x;
-            if (int.TryParse(response, out x))
+            if (int.TryParse(response, out x) && int.IsPositive(x))
             {
                 Console.WriteLine(PairOuImpair(x));
             }
             else
             {
-                Console.WriteLine("Tu me la mettras pas à l'envers mon petit patouille");
+                Console.WriteLine("Tu ne me la mettras pas à l'envers.\nIl me faut un chiffre positif !");
             }
         } while (true);
     }
