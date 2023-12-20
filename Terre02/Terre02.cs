@@ -21,8 +21,7 @@ class Terre02
             Console.WriteLine("Bonjour ! \nBienvenue dans ce programme. \nCette console affiche les arguments reçus ligne par ligne.");
             Console.WriteLine("==========-==========-==========");
 
-
-            string[] args = { "Je s'appelle Groot !" };
+            string[] args = {"Je s'appelle Groot !", "Je suis Patrice...", "\\m/_Children_Of_Bodom COB"};
             GetArgs(args);
         }
 
@@ -30,13 +29,11 @@ class Terre02
         {
             for (int i = 0; i < args.Length; i++)
             {
-                // Utilisez la méthode Split pour diviser la chaîne par la virgule
                 string[] splitArgs = args[i].Split(' ');
 
-                // Affichez chaque élément de la chaîne divisée ligne par ligne
                 for (int j = 0; j < splitArgs.Length; j++)
                 {
-                    Console.WriteLine(splitArgs[j].Trim()); // Utilisez Trim pour supprimer les espaces autour des mots
+                    Console.WriteLine(splitArgs[j]);
                 }
             }
             Console.WriteLine();
@@ -44,3 +41,33 @@ class Terre02
     }
 }
 
+//            do
+//            {
+//                Console.WriteLine("Entrez une chaîne de caractères (ou 'exit' pour quitter) :");
+//                string input = Console.ReadLine();
+//                if (input.ToLower() == "exit")
+//                    break;
+//                string[] phraseInput = { input };
+//                Console.WriteLine("---------- ---------- ----------");
+//                GetArgs(phraseInput);
+//                Console.WriteLine("---------- ---------- ----------");
+//            } while (true);
+//        }
+
+//        static void GetArgs(string[] phraseInput)
+//        {
+//            for (int i = 0; i < phraseInput.Length; i++)
+//            {
+//                // Utilisez la méthode Split pour diviser la chaîne par les espaces
+//                string[] splitPhraseInput = phraseInput[i].Split(' ');
+
+//                // Affichez chaque élément de la chaîne divisée ligne par ligne
+//                for (int j = 0; j < splitPhraseInput.Length; j++)
+//                {
+//                    Console.WriteLine(splitPhraseInput[j].Trim()); // Utilisez Trim pour supprimer les espaces autour des mots
+//                }
+//            }
+//            Console.WriteLine();
+//        }
+//    }
+//}
