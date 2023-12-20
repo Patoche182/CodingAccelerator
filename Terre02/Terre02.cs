@@ -12,17 +12,35 @@ Exemples d’utilisation :
 
 class Terre02
 {
-    static void Main()
+
+    class Program
     {
-        string[] args = { "Je s'appelle Groot !", "Je m'apelle Patrice", "Alex me saoule" };
-        GetArgs(args);
-    }
-    static void GetArgs(string[] args)
-    {
-        for (int i = 0; i < args.Length; i++)
+        static void Main()
         {
-            Console.WriteLine(args[i]);
+            Console.WriteLine("==========-==========-==========");
+            Console.WriteLine("Bonjour ! \nBienvenue dans ce programme. \nCette console affiche les arguments reçus ligne par ligne.");
+            Console.WriteLine("==========-==========-==========");
+
+
+            string[] args = { "Je s'appelle Groot !" };
+            GetArgs(args);
         }
-        Console.WriteLine();
+
+        static void GetArgs(string[] args)
+        {
+            for (int i = 0; i < args.Length; i++)
+            {
+                // Utilisez la méthode Split pour diviser la chaîne par la virgule
+                string[] splitArgs = args[i].Split(' ');
+
+                // Affichez chaque élément de la chaîne divisée ligne par ligne
+                for (int j = 0; j < splitArgs.Length; j++)
+                {
+                    Console.WriteLine(splitArgs[j].Trim()); // Utilisez Trim pour supprimer les espaces autour des mots
+                }
+            }
+            Console.WriteLine();
+        }
     }
 }
+
