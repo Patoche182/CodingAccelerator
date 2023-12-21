@@ -15,20 +15,48 @@ class Terre03
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme. \nCette console donne l'alphabet à partir de la lettre donnée en argument.");
         Console.WriteLine("==========-==========-==========");
 
-        do
+        // Méthode 2 :
+
+        // Avant Optimisation ChatGPT
+        //    do
+        //    {
+        //        Console.Write("Veuillez entrer une lettre (ou 'exit' pour quitter) : ");
+        //        string userInput = Console.ReadLine();
+
+        //        if (userInput.ToLower() == "exit")
+        //            break;
+
+        //        if (userInput.Length == 1 && char.IsLetter(userInput[0]))
+        //        {
+        //            char userLetter = char.ToLower(userInput[0]);
+        //            GetAlphabetFromLetter(userLetter);
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("Entrée non valide. Vous avez entré un chiffre ou plusieurs caractères.");
+        //        }
+        //    } while (true);
+        //}
+
+        // Après Optimisation ChatGPT
+        while (true)
         {
-            Console.Write("Veuillez entrer une lettre : ");
-            string userInput = Console.ReadLine();
+            Console.Write("Veuillez entrer une lettre (ou 'exit' pour quitter) : ");
+            string userInput = Console.ReadLine().ToLower();
+
+            if (userInput == "exit")
+                break;
+
             if (userInput.Length == 1 && char.IsLetter(userInput[0]))
             {
-                char userLetter = char.ToLower(userInput[0]);
-                GetAlphabetFromLetter(userLetter);
+                char userLetter = userInput[0];
+                GetAlphabetFromLetter(char.ToLower(userLetter));
             }
             else
             {
-                Console.WriteLine("Entrée non valide. Vous avez entrez un chiffre ou plusieurs caractères.");
+                Console.WriteLine("Entrée non valide. Vous avez entré un chiffre ou plusieurs caractères.");
             }
-        } while (true);
+        }
     }
 
     static void GetAlphabetFromLetter(char letter)
@@ -60,6 +88,8 @@ class Terre03
         Console.WriteLine("\n-------------\n");
     }
 }
+
+// Méthode 1 :
 
 //static void Main()
 //{
