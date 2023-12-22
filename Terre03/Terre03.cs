@@ -61,7 +61,7 @@ class Terre03
 
     static void GetAlphabetFromLetter(char letter)
     {
-        string alphabet = "abcdefghijklmnopqrstuvwxyz"; // abcdefghijklmnopqrstuvwxyz "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // abcdefghijklmnopqrstuvwxyz "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         letter = char.ToLower(letter);
         bool found = false; // J'intègre un bool ==> 
         /*
@@ -74,7 +74,7 @@ class Terre03
          Sans cette variable, l'affichage commencerait dès le début de l'alphabet, et la lettre de l'utilisateur ne serait pas incluse dans le résultat.
          */
 
-        foreach (char i in alphabet)
+        foreach (char i in alphabet.ToLower())
         {
             if (letter == i)
             {

@@ -19,6 +19,8 @@ class Terre04
 {
     static void Main()
     {
+        Console.WriteLine(System.IO.Path.GetTempPath());
+
         Console.WriteLine("==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
         Console.WriteLine("Cette console récupère en [Entrée] le chiffre donné et renvoi en [Sortie] si c'est un chiffre Pair ou Impaire. \nIl renvoi aussi si il est Positif ou Négatif.");
@@ -45,7 +47,7 @@ class Terre04
     // Voilà commment déterminer si l’argument donné est un entier pair ou impair
     static string PairOuImpair(int nombre)
     {
-        if (nombre % 2 == 0) // On vérifie si le modulo de 2 de ce chiffre est égal à 0 (10/2 = 5 reste 0). Dans ce cas il est Pair.
+        if (nombre % 2 == 0) 
         {
             return "Pair";
         }
