@@ -46,7 +46,7 @@ class Terre02
 
             do
             {
-                Console.WriteLine("Veuillez entrer une phrase (ou 'exit' pour quitter) :");
+                Console.WriteLine("Veuillez entrer une phrase, ex : je suis solide ! (ou 'exit' pour quitter) :");
                 string input = Console.ReadLine();
                 if (input.ToLower() == "exit")
                     break;
