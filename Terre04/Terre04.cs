@@ -21,10 +21,10 @@ class Terre04
     {
         Console.WriteLine(System.IO.Path.GetTempPath());
 
-        Console.WriteLine("==========//==========//==========");
+        Console.WriteLine("==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
         Console.WriteLine("Cette console récupère en [Entrée] le chiffre donné et renvoi en [Sortie] si c'est un chiffre Pair ou Impaire. \nIl renvoi aussi si il est Positif ou Négatif.");
-        Console.WriteLine("==========//==========//==========");
+        Console.WriteLine("==========-==========-==========");
 
         // Boucle Do-While
         do
@@ -40,7 +40,7 @@ class Terre04
             {
                 Console.WriteLine("Tu ne me la mettras pas à l'envers. Il me faut un chiffre entier !");
             }
-            Console.WriteLine("---------- ---------- ----------");
+            Console.WriteLine("----------=----------=----------");
         } while (true);
     }
 
