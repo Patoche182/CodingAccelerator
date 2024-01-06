@@ -19,7 +19,7 @@ class Terre04
 {
     static void Main()
     {
-        Console.WriteLine(System.IO.Path.GetTempPath());
+        // Console.WriteLine(System.IO.Path.GetTempPath());
 
         Console.WriteLine("==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
