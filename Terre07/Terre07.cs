@@ -1,8 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/* 07 - TAILLE D'UNE CHAINE - 07
+
+Créez un programme qui affiche le nombre de caractères d’une chaîne de caractères passée en argument.
+Exemples d’utilisation :
+    $> python exo.py “Hello world!”
+    12
+    $> python exo.py
+    erreur.
+    $> python exo.py “Bonjour” “Aurevoir”
+    erreur.
+    $> python exo.py 10
+    erreur.
+
+Fonctions interdites: 
+-La fonction length
+-La fonction size
+ */
+
 
 class Terre07
 {
