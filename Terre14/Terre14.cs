@@ -16,9 +16,9 @@ Fonctions interdites:
 -La fonction sort
 */
 
-namespace Terre13
+namespace Terre14
 {
-    internal class Terre13
+    internal class Terre14
     {
         // allé on va le faire !!!
     }
