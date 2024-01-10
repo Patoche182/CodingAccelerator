@@ -21,17 +21,69 @@ class Terre07
 {
     static void Main()
     {
-        string chaine = "Je s'apelle Groot 22 !";
-        Console.WriteLine(Reverse(chaine));
-    }
-    static string Reverse(string chaine)
-    {
-        string inverse = "";
-        for (int i = chaine.Length - 1; i >= 0; i--)
+        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
+        Console.WriteLine("Cette console affiche le nombre de caractères d’une chaîne de caractères, sans utiliser la fonction Length !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
+
+        do
         {
-            // écrire les char un à un dans inverse
-            inverse += chaine[i];
+            Console.WriteLine("Veuillez entrer une chaîne de caradctère. (ou 'exit' pour quitter) :");
+            string userInput = Console.ReadLine();
+            string chaine = userInput;
+
+            if (chaine == "exit")
+                break;
+
+            if (chaine != "")
+            {
+                Console.WriteLine(Taille(chaine));
+            }
+            else
+            {
+                Console.WriteLine("Attention, ce n'est pas valide. Pour fermer ce programme : exit");
+            }
+            Console.WriteLine("----------=----------=----------=----------=----------");
+        } while (true);
+    }
+
+    // Méthodes :
+    static string Taille(string chaine)
+    {
+        string taille = "";
+        for (int i = 0; i < chaine.Length; i++)
+        {
+            // compter le nombre de lettre
+
         }
-        return inverse;
+        return taille;
     }
 }
+
+
+//class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        if (args.Length > 0)
+//        {
+//            string inputString = args[0];
+
+//            // Utilisez une boucle pour compter les caractères
+//            int characterCount = 0;
+
+//            foreach (char c in inputString)
+//            {
+//                // Incrémentez le compteur pour chaque caractère
+//                characterCount++;
+//            }
+
+//            // Affichez le résultat
+//            Console.WriteLine($"La chaîne \"{inputString}\" contient {characterCount} caractères.");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Veuillez fournir une chaîne de caractères en argument.");
+//        }
+//    }
+//}

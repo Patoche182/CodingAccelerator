@@ -15,9 +15,9 @@ class Terre02
     {
         static void Main()
         {
-            Console.WriteLine("==========-==========-==========");
+            Console.WriteLine("==========-==========-==========-==========-==========");
             Console.WriteLine("Bonjour ! \nBienvenue dans ce programme. \nCette console affiche les arguments reçus ligne par ligne.");
-            Console.WriteLine("==========-==========-==========");
+            Console.WriteLine("==========-==========-==========-==========-==========");
 
             //// Methode 1:
 
@@ -52,9 +52,9 @@ class Terre02
                     break;
 
                 string[] phraseInput = { input };
-                Console.WriteLine("---------- ---------- ----------");
+                Console.WriteLine("---------- ---------- ---------- ----------");
                 ConvertirPhrase(phraseInput);
-                Console.WriteLine("---------- ---------- ----------");
+                Console.WriteLine("---------- ---------- ---------- ----------");
             } while (true);
         }
 

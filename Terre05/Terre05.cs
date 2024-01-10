@@ -17,17 +17,17 @@ class Terre05
 {
     static void Main()
     {
-        Console.WriteLine("==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
         Console.WriteLine("Cette console récupère en [Entrée] 2 nombres à diviser et renvoi en [Sortie] le résultat. \nIl renvoi aussi le reste de la division."); // exemple 5/2 = 2 : % = 1
-        Console.WriteLine("==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========-==========");
 
         do
         {
-            Console.WriteLine("Donne-moi un nombre que tu souhaite diviser :");
+            Console.WriteLine("Donne-moi un nombre que tu souhaite diviser (ou 'exit' pour quitter) :");
             int a = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Maintenant par quelle valeur souhaite-tu le diviser :");
+            Console.WriteLine("Maintenant, par quelle valeur souhaite-tu le diviser (ou 'exit' pour quitter) :");
             int b = Convert.ToInt32(Console.ReadLine());
 
             if (b != 0) // le deuxième nombre doit être différent de zéro avant de continuer
@@ -38,8 +38,7 @@ class Terre05
             {
                 Console.WriteLine("Attention, la division par zéro est impossible!");
             }
-            Console.WriteLine("----------=----------=----------");
-            Console.WriteLine("----------=----------=----------");
+            Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
 

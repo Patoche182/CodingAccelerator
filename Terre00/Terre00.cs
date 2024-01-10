@@ -5,7 +5,8 @@ Exemples d’utilisation :
     $> python exo.py
     abcdefghijklmnopqrstuvwxyz
     $>
-Attention : votre programme devra utiliser une boucle. */
+Attention : votre programme devra utiliser une boucle. 
+*/
 
 // Méthode 1 :
 
