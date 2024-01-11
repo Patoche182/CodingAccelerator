@@ -14,6 +14,6 @@ namespace Terre11
 {
     internal class Terre11
     {
-        // allé on va le faire !!!
+        // allé on va le faire  et vite :) !!!
     }
 }

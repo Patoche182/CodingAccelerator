@@ -20,6 +20,6 @@ namespace Terre14
 {
     internal class Terre14
     {
-        // allé on va le faire !!!
+        // allé on va le faire  et vite :) !!!
     }
 }

@@ -16,6 +16,7 @@ Fonctions interdites:
 -La fonction size
  */
 
+// allé on va le faire  et vite :) !!!
 
 class Terre07
 {
