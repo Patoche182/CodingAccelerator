@@ -16,7 +16,7 @@ Fonctions interdites:
 -La fonction size
  */
 
-// allé on va le faire  et vite :) !!!
+// allé on va le faire et vite :) !!!
 
 class Terre07
 {
@@ -44,6 +44,7 @@ class Terre07
             {
                 Console.WriteLine("Attention, ce n'est pas valide. Pour fermer ce programme : exit");
             }
+            Console.WriteLine("----------=----------=----------=----------=----------");
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }

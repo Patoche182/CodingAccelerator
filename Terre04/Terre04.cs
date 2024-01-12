@@ -41,6 +41,7 @@ class Terre04
                 Console.WriteLine("Tu ne me la mettras pas à l'envers. Il me faut un chiffre entier !");
             }
             Console.WriteLine("----------=----------=----------=----------=----------");
+            Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
 

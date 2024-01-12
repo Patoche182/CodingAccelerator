@@ -14,6 +14,6 @@ namespace Terre08
 {
     internal class Terre08
     {
-        // allé on va le faire  et vite :) !!!
+        // allé on va le faire et vite :) !!!
     }
 }

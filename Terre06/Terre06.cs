@@ -40,6 +40,7 @@ class Terre06
                 Console.WriteLine("Attention, ce n'est pas valide. Pour fermer ce programme écris : exit");
             }
             Console.WriteLine("----------=----------=----------=----------=----------");
+            Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
 
