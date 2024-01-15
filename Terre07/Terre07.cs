@@ -38,13 +38,12 @@ class Terre07
 
             if (chaine != "")
             {
-                Console.WriteLine(Taille(chaine));
+                Console.WriteLine($"La chaîne contient - " + Taille(chaine) + " - caractères.");
             }
             else
             {
                 Console.WriteLine("Attention, ce n'est pas valide. Pour fermer ce programme : exit");
             }
-            Console.WriteLine("----------=----------=----------=----------=----------");
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
@@ -52,12 +51,12 @@ class Terre07
     // Méthodes :
     static string Taille(string chaine)
     {
-        int count = 0; // Déclarer la variable count
+        int count = 0;
         foreach (char lettre in chaine)
         {
-            count = count + 1;
+            count++;
         }
-        return count.ToString(); // Retourner la valeur de count convertie en chaîne
+        return count.ToString();
     }
 
 }
