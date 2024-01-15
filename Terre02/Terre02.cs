@@ -53,9 +53,7 @@ class Terre02
 
                 string[] phraseInput = { input };
                 Console.WriteLine("---------- ---------- ---------- ----------");
-                Console.WriteLine("---------- ---------- ---------- ----------");
                 ConvertirPhrase(phraseInput);
-                Console.WriteLine("---------- ---------- ---------- ----------");
                 Console.WriteLine("---------- ---------- ---------- ----------");
             } while (true);
         }

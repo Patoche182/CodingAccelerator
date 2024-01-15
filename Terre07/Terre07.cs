@@ -38,7 +38,7 @@ class Terre07
 
             if (chaine != "")
             {
-                Console.WriteLine($"La chaîne contient - " + Taille(chaine) + " - caractères.");
+                Console.WriteLine("La chaîne contient - " + Taille(chaine) + " - caractères.");
             }
             else
             {
