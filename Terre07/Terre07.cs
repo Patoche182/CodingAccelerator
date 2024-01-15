@@ -52,14 +52,14 @@ class Terre07
     // Méthodes :
     static string Taille(string chaine)
     {
-        string taille = "";
-        for (int i = 0; i < chaine.Length; i++)
+        int count = 0; // Déclarer la variable count
+        foreach (char lettre in chaine)
         {
-            // compter le nombre de lettre
-
+            count = count + 1;
         }
-        return taille;
+        return count.ToString(); // Retourner la valeur de count convertie en chaîne
     }
+
 }
 
 
