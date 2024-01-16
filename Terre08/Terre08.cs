@@ -23,7 +23,7 @@ class Terre08
 
         do
         {
-            Console.WriteLine("Veuillez entrer un nombre : (ou 'exit' pour quitter)");
+            Console.WriteLine("Veuillez entrer un NOMBRE : (ou 'exit' pour quitter)");
             string baseNumberInput = Console.ReadLine();
 
             if (baseNumberInput.ToLower() == "exit")
@@ -31,7 +31,7 @@ class Terre08
 
             if (double.TryParse(baseNumberInput, out double baseNumber))
             {
-                Console.WriteLine("Veuillez entrer un exposant : (ou 'exit' pour quitter)");
+                Console.WriteLine("Veuillez entrer un nombre qui sera votre EXPOSANT : (ou 'exit' pour quitter)");
                 string exponentInput = Console.ReadLine();
 
                 if (exponentInput.ToLower() == "exit")
@@ -50,7 +50,7 @@ class Terre08
             {
                 Console.WriteLine("Attention ! Veuillez entrer un nombre svp.");
             }
-
+            Console.WriteLine("----------=----------=----------=----------=----------");
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
