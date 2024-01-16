@@ -10,10 +10,18 @@ Fonctions interdites:
  */
 
 
-namespace Terre09
+// allé on va le faire et vite :) !!!
+// Oh Purée c'est la Racine.. purée :) !!! 
+
+
+class Terre09
 {
-    internal class Terre09
+    static void Main()
     {
-        // allé on va le faire et vite :) !!!
+        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
+        Console.WriteLine("Cette console affiche la Racine Carré d'un nombre, entier et positif.");
+        Console.WriteLine("==========-==========-==========-==========-==========");
+
     }
 }
