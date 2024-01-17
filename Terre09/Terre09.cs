@@ -22,6 +22,14 @@ class Terre09
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
         Console.WriteLine("Cette console affiche la Racine Carré d'un nombre, entier et positif.");
         Console.WriteLine("==========-==========-==========-==========-==========");
+        
+        // Qu'est ce qu'une racine carré mathématiquement parlant :
+        // Décomposer les étapes : 
+        // Par exemple : Racine de 4 est 2. Car 2 au carré = 4
+        // Autre exemple : Racine de 16 = 4. Car 4 x 4 = 16
+        // Autre exemple : Racine de 100 = 10. Car 10 x 10 = 100
+        // 
+        // Déjà il faut vérifier quele nombre donné est un entier positif.
 
     }
 }
