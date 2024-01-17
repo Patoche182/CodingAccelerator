@@ -51,7 +51,7 @@ class Terre05
 
     static int Reste(int a, int b)
     {
-        int reste = a % b;
+        int reste = a % b; // à modifier pour ne pas utiliser le Modulo
         return reste;
     }
 
