@@ -18,7 +18,7 @@ class Terre08
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        Console.WriteLine("Cette console affiche le résultat d’une puissance entre deux nombres.");
+        Console.WriteLine("Cette console affiche le résultat d’une puissance entre un NOMBRE et un EXPOSANT.");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
         do
@@ -31,7 +31,7 @@ class Terre08
 
             if (double.TryParse(baseNumberInput, out double baseNumber))
             {
-                Console.WriteLine("Veuillez entrer un nombre qui sera votre EXPOSANT : (ou 'exit' pour quitter)");
+                Console.WriteLine("Veuillez entrer un EXPOSANT : (ou 'exit' pour quitter)");
                 string exponentInput = Console.ReadLine();
 
                 if (exponentInput.ToLower() == "exit")
@@ -50,7 +50,6 @@ class Terre08
             {
                 Console.WriteLine("Attention ! Veuillez entrer un nombre svp.");
             }
-            Console.WriteLine("----------=----------=----------=----------=----------");
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
