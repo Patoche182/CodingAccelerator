@@ -15,7 +15,5 @@ namespace Terre10
     internal class Terre10
     {
         // allé on va le faire et vite :) !!!
-        // allé on va le faire et vite :) !!!
-        // allé on va le faire et vite :) !!!
     }
 }

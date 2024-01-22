@@ -17,8 +17,10 @@ class Terre08
     static void Main()
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        Console.WriteLine("Cette console affiche le résultat d’une puissance entre un NOMBRE et un EXPOSANT.");
+        Console.WriteLine("Cette console affiche le résultat d’une puissance entre un nombre et un exposant.");
+        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
         do
@@ -39,7 +41,7 @@ class Terre08
 
                 if (int.TryParse(exponentInput, out int exponent))
                 {
-                    Console.WriteLine("Le résultat du calcul est : " + Puissance(baseNumber, exponent));
+                    Console.WriteLine("Le résultat du calcul de puissance est : " + Puissance(baseNumber, exponent));
                 }
                 else
                 {
@@ -48,8 +50,9 @@ class Terre08
             }
             else
             {
-                Console.WriteLine("Attention ! Veuillez entrer un nombre svp.");
+                Console.WriteLine("Attention ! Veuillez entrer un nombre svp. Pas de blagues !");
             }
+            Console.WriteLine("----------=----------=----------=----------=----------");
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
