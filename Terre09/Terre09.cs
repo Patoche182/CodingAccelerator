@@ -15,7 +15,7 @@ class Terre09
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        Console.WriteLine("Cette console affiche la Racine Carré d'un nombre, entier et positif.");
+        Console.WriteLine("Cette console affiche la Racine Carré d'un nombre, entier et positif : (ou 'exit' pour quitter).");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
         // Qu'est ce qu'une racine carré mathématiquement parlant : 
@@ -28,7 +28,7 @@ class Terre09
 
         do
         {
-            Console.WriteLine("Veuillez entrer un NOMBRE entier et positif : (ou 'exit' pour quitter)");
+            Console.WriteLine("Veuillez entrer un nombre");
             string baseNumberInput = Console.ReadLine();
 
             if (baseNumberInput.ToLower() == "exit")
@@ -43,35 +43,32 @@ class Terre09
             }
             else
             {
-                Console.WriteLine("Attention ! Veuillez entrer un nombre Entier et Positif svp.");
+                Console.WriteLine("- /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ -");
+                Console.WriteLine("- Attention ! Veuillez entrer un nombre ENTIER et POSITIF svp -");
+                Console.WriteLine("- /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ -");
             }
             Console.WriteLine("----------=----------=----------=----------=----------");
+
         } while (true);
     }
 
     // Méthodes :
     static double RacineCarre(int baseNumber)
     {
-        double result = Math.Pow(baseNumber, 0.5);
+        double result = Math.Pow(baseNumber, 0.5); // 0.5 et non pas 0,5 !
 
         if (result % 1 == 0)
         {
-            Console.WriteLine("Le résultat du calcul de la Racine Carré est : " + result.ToString("F0"));
+            Console.WriteLine("Le résultat du calcul de la Racine Carré est : " + result.ToString("F0")); // pour afficher le résultat sans décimal
         }
         else
         {
-            Console.WriteLine("Le résultat du calcul de la Racine Carré est : " + result.ToString("F2"));
+            Console.WriteLine("Le résultat du calcul de la Racine Carré est : " + result.ToString("F2")); // pour afficher le résultat avec 2 décimals
         }
-
-
         return result;
         // return (int)result;
     }
 }
-
-
-
-
 
 
 //class Program
@@ -92,4 +89,3 @@ class Terre09
 //        return Math.Pow(baseNombre, exposant);
 //    }
 //}
-
