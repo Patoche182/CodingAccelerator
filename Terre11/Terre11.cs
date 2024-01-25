@@ -68,3 +68,82 @@ class Terre11
         return true;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * 
+ *
+ *using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Entrez l'heure au format 24h (HH:mm) : ");
+        string input = Console.ReadLine();
+
+        if (DateTime.TryParseExact(input, "HH:mm", null, System.Globalization.DateTimeStyles.None, out DateTime time))
+        {
+            Console.WriteLine("Heure en format 12h : " + ConvertTo12HourFormat(time));
+        }
+        else
+        {
+            Console.WriteLine("Format d'heure incorrect. Assurez-vous d'utiliser le format HH:mm.");
+        }
+    }
+
+    static string ConvertTo12HourFormat(DateTime time)
+    {
+        return time.ToString("hh:mm tt");
+    }
+}
+
+ *
+ */
+
+
+//----------------------------------
+
+
+
+//class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        string input;
+//        do
+//        {
+//            Console.Write("Entrez l'heure au format 24h (HH:mm) : ");
+//            input = Console.ReadLine();
+
+//            if (DateTime.TryParseExact(input, "HH:mm", null, System.Globalization.DateTimeStyles.None, out DateTime time))
+//            {
+//                Console.WriteLine("Heure en format 12h : " + ConvertTo12HourFormat(time));
+//            }
+//            else
+//            {
+//                Console.WriteLine("Format d'heure incorrect. Assurez-vous d'utiliser le format HH:mm.");
+//            }
+
+//            Console.Write("Voulez-vous continuer? (O/N) : ");
+//        } while (Console.ReadLine().ToUpper() == "O");
+//    }
+
+//    static string ConvertTo12HourFormat(DateTime time)
+//    {
+//        return time.ToString("hh:mm tt");
+//    }
+//}
