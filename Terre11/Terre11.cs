@@ -9,79 +9,51 @@ Exemples d’utilisation :
 Attention : midi et minuit.
 */
 
-
 class Terre11
 {
-    static void Main()
+    static void Main(string[] args)
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
         Console.WriteLine("Cette console transforme une heure affichée en format 24h en une heure affichée en format 12h.");
         Console.WriteLine("==========-==========-==========-==========-==========");
-
+        string input;
         do
         {
-            Console.WriteLine("Veuillez entrer un nombre entier positif (ou 'exit' pour quitter) :");
-            string input = Console.ReadLine();
+            Console.Write("Entrez l'heure au format 24h (HH:mm) : ");
+            input = Console.ReadLine();
 
-            if (input.ToLower() == "exit")
-                break;
-
-            if (int.TryParse(input, out int number) && number > 0)
+            if (DateTime.TryParseExact(input, "HH:mm", null, System.Globalization.DateTimeStyles.None, out DateTime time))
             {
-                bool isPrime = EstNombrePremier(number);
-
-                if (isPrime)
-                {
-                    Console.WriteLine($"Oui, {number} est un nombre premier.");
-                }
-                else
-                {
-                    Console.WriteLine($"Non, {number} n'est pas un nombre premier.");
-                }
+                string formattedTime = ConvertTo12HourFormat(time);
+                Console.WriteLine("Heure en format 12h : " + formattedTime);
             }
             else
             {
-                Console.WriteLine("Veuillez entrer un nombre entier positif.");
+                Console.WriteLine("Format d'heure incorrect. Assurez-vous d'utiliser le format HH:mm.");
             }
-            Console.WriteLine("----------=----------=----------=----------=----------");
-        } while (true);
+
+            Console.Write("Voulez-vous continuer? (O/N) : ");
+        } while (Console.ReadLine().ToUpper() == "O");
     }
 
-    static bool EstNombrePremier(int n)
+    static string ConvertTo12HourFormat(DateTime time)
     {
-        if (n <= 1)
+        string period = "AM";
+        if (time.Hour >= 12)
         {
-            // 0 et 1 ne sont pas des nombres premiers
-            return false;
+            period = "PM";
         }
-        // Vérifier si n est divisible par un nombre de 2 à la racine carrée de n
-        for (int i = 2; i <= Math.Sqrt(n); i++)
+
+        int hour12 = time.Hour > 12 ? time.Hour - 12 : time.Hour;
+        if (hour12 == 0)
         {
-            if (n % i == 0)
-            {
-                // n est divisible par i, donc ce n'est pas un nombre premier
-                return false;
-            }
+            hour12 = 12; // Pour 00:00 en format 12h, nous affichons 12 AM.
         }
-        // Si aucun diviseur n'est trouvé, n est un nombre premier
-        return true;
+
+        return $"{hour12:D2}:{time.Minute:D2} {period}";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
  * 
