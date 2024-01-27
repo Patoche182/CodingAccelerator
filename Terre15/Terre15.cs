@@ -10,10 +10,10 @@ Exemples d’utilisation :
 Note : [] est à remplacer par un adjectif de votre choix (facile ?)
 */
 
-namespace Terre15
+class Terre15
 {
-    internal class Terre15
+    static void Main()
     {
-
+        Console.WriteLine("J'ai terminé l'Epreuve de la Terre et c'était franchement compliqué encore pour moi...");
     }
 }
