@@ -16,10 +16,10 @@ Fonctions interdites:
 -La fonction sort
 */
 
-namespace Terre14
+class Terre14
 {
-    internal class Terre14
+    static void Main()
     {
-        // allé on va le faire et vite :) !!!
+        Console.WriteLine("Créez un programme qui détermine si une liste d’entiers est triée ou pas.");
     }
 }

@@ -17,10 +17,10 @@ Fonctions interdites:
 */
 
 
-namespace Terre13
+class Terre13
 {
-    internal class Terre13
+    static void Main()
     {
-        // allé on va le faire et vite :) !!!
+        Console.WriteLine("Créez un programme qui prend en paramètre trois entiers et affiche la valeur du milieu.");
     }
 }
