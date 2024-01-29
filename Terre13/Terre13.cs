@@ -1,14 +1,11 @@
 ﻿/* 13 - Trouver la Suisse (lol) - 13
 
 Créez un programme qui prend en paramètre trois entiers et affiche la valeur du milieu.
-
 Exemples d’utilisation :
     $> ruby exo.rb 11 40 34
     34
-
     $> ruby exo.rb 2 1 3
     2
-
     $> ruby exo.rb 2 2 2
     erreur.
 
@@ -27,9 +24,7 @@ do
     string input = Console.ReadLine();
 
     if (input.ToLower() == "exit") { break; } // ne pas oublier ToLower()
-
     string[] inputs = input.Split(' ');
-
     if (inputs.Length != 3)
     {
         Console.WriteLine("Veuillez entrer exactement 3 nombres entiers.");
@@ -42,7 +37,6 @@ do
         Console.WriteLine("Veuillez entrer des nombres entiers valides.");
         continue;
     }
-
     if ((a < b) && (b < c))
     {
         Console.WriteLine("La valeur intermédiaire est " + b);
@@ -55,9 +49,7 @@ do
     {
         Console.WriteLine("La valeur intermédiaire est " + a);
     }
-
     Console.WriteLine("----------=----------=----------=----------=----------");
-
 } while (true);
 
 

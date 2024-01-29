@@ -12,7 +12,6 @@ Fonctions interdites:
 -La fonction reverse
 */
 
-
 class Terre06
 {
     static void Main()
