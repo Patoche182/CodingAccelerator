@@ -19,41 +19,102 @@ class Terre14
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        Console.WriteLine("Cette console récupère en [Entrée] une liste de nombres entier et renvoi en [Sortie] si ceux-ci sont triée ou pas. \nFournissez des nombres séparé par un espace ex: 5 10 3 25 105 9");
+        Console.WriteLine("Cette console récupère en [Entrée] une liste de nombres entier et renvoie en [Sortie] si ceux-ci sont triés ou pas. \nFournissez des nombres séparés par un espace ex: 5 10 3 25 105 9");
         Console.WriteLine("==========-==========-==========-==========-==========");
+
+        bool continuer = true;
 
         do
         {
-            Console.WriteLine("Veuillez entrer vos nombres entiers, séparés par un espace (ou 'exit' pour quitter) :");
+            // Demander à l'utilisateur d'entrer une liste de nombres entiers séparés par des espaces
+            Console.WriteLine("Veuillez entrer une liste de nombres entiers séparés par un espace (ou 'exit' pour quitter) :");
             string input = Console.ReadLine();
 
-            if (input.ToLower() == "exit") { break; } // ne pas oublier ToLower()
-            string[] inputs = input.Split(' ');
-            if (inputs.Length != 3)
+            if (input.ToLower() == "exit")
             {
-                Console.WriteLine("Veuillez entrer exactement 3 nombres entiers.");
+                break;
+            }
+
+            // Diviser la chaîne d'entrée en un tableau de chaînes en utilisant l'espace comme délimiteur
+            string[] numbersString = input.Split(' ');
+
+            // Convertir les chaînes en nombres entiers
+            int[] numbers = new int[numbersString.Length];
+            for (int i = 0; i < numbersString.Length; i++)
+            {
+                if (!int.TryParse(numbersString[i], out numbers[i]))
+                {
+                    Console.WriteLine("Erreur : Veuillez entrer des nombres entiers valides.");
+                    continuer = false;
+                    break;
+                }
+            }
+
+            if (!continuer)
+            {
                 continue;
             }
-            // On essaie de vérifier que les entrées sont bien convertie en int : ( avec int.TryParse() )
-            int a, b, c;
-            if (!int.TryParse(inputs[0], out a) || !int.TryParse(inputs[1], out b) || !int.TryParse(inputs[2], out c)) // Si une des conditons est true (si elle echoue quoi) ce If renvoi un message d'erreur.
+
+            // Vérifier si la liste de nombres est triée
+            bool sorted = true;
+            for (int i = 1; i < numbers.Length; i++)
             {
-                Console.WriteLine("Veuillez entrer des nombres entiers valides.");
-                continue;
+                if (numbers[i] < numbers[i - 1])
+                {
+                    sorted = false;
+                    break;
+                }
             }
-            if ((a < b) && (b < c))
+
+            // Afficher le résultat
+            if (sorted)
             {
-                Console.WriteLine("La valeur intermédiaire est " + b);
-            }
-            else if ((a < c) && (c < b))
-            {
-                Console.WriteLine("La valeur intermédiaire est " + c);
+                Console.WriteLine("Les nombres sont triés.");
             }
             else
             {
-                Console.WriteLine("La valeur intermédiaire est " + a);
+                Console.WriteLine("Les nombres ne sont pas triés.");
             }
-            Console.WriteLine("----------=----------=----------=----------=----------");
-        } while (true);
+        } while (continuer);
     }
 }
+
+
+//Console.WriteLine("==========-==========-==========-==========-==========");
+//Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
+//Console.WriteLine("Cette console récupère en [Entrée] une liste de nombres entier et renvoie en [Sortie] si ceux-ci sont triés ou pas. \nFournissez des nombres séparés par un espace ex: 5 10 3 25 105 9");
+//Console.WriteLine("==========-==========-==========-==========-==========");
+
+//Console.WriteLine("Veuillez entrer une liste de nombres entiers séparés par un espace :");
+//string input = Console.ReadLine();
+
+//string[] numbersString = input.Split(' ');
+
+//int[] numbers = new int[numbersString.Length];
+//for (int i = 0; i < numbersString.Length; i++)
+//{
+//    if (!int.TryParse(numbersString[i], out numbers[i]))
+//    {
+//        Console.WriteLine("Erreur : Veuillez entrer des nombres entiers valides.");
+//        return;
+//    }
+//}
+
+//bool sorted = true;
+//for (int i = 1; i < numbers.Length; i++)
+//{
+//    if (numbers[i] < numbers[i - 1])
+//    {
+//        sorted = false;
+//        break;
+//    }
+//}
+
+//if (sorted)
+//{
+//    Console.WriteLine("Les nombres sont triés.");
+//}
+//else
+//{
+//    Console.WriteLine("Les nombres ne sont pas triés.");
+//}
