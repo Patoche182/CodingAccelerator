@@ -21,9 +21,7 @@ class Terre14
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
         Console.WriteLine("Cette console récupère en [Entrée] une liste de nombres entier et renvoie en [Sortie] si ceux-ci sont triés ou pas. \nFournissez des nombres séparés par un espace ex: 5 10 3 25 105 9");
         Console.WriteLine("==========-==========-==========-==========-==========");
-
         bool continuer = true;
-
         do
         {
             // Demander à l'utilisateur d'entrer une liste de nombres entiers séparés par des espaces

@@ -55,10 +55,6 @@ class Terre11
 }
 
 /*
- * 
- *
- *using System;
-
 class Program
 {
     static void Main(string[] args)
@@ -81,14 +77,10 @@ class Program
         return time.ToString("hh:mm tt");
     }
 }
-
- *
  */
 
 
 //----------------------------------
-
-
 
 //class Program
 //{

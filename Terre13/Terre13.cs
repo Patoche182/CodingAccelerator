@@ -17,7 +17,6 @@ Console.WriteLine("==========-==========-==========-==========-==========");
 Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
 Console.WriteLine("Cette console récupère en [Entrée] 3 nombres entier et renvoi en [Sortie] celui du millieu. \nAutrement dit, celui qui à la valeur intermédire.");
 Console.WriteLine("==========-==========-==========-==========-==========");
-
 do
 {
     Console.WriteLine("Veuillez entrer vos 3 nombres entiers, séparés par un espace (ou 'exit' pour quitter) :");
@@ -51,7 +50,6 @@ do
     }
     Console.WriteLine("----------=----------=----------=----------=----------");
 } while (true);
-
 
 
 //do

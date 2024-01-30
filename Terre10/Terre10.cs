@@ -19,7 +19,6 @@ class Terre10
         Console.WriteLine("Cette console affiche si le nombres donné est en Nombre Premier.");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
-
         /* NOMBRE PREMIER
            Nombre naturel qui est supérieur à 1 et qui a exactement deux diviseurs distincts, soit 1 et lui-même.
            Il existe une infinité de nombres premiers.
@@ -29,7 +28,6 @@ class Terre10
            Voici la liste des 15 nombres premiers inférieurs à  50 : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47.
            Le nombre 15 n’est pas un nombre premier, car il a plus de deux diviseurs : div (15) = {1, 3, 5, 15}.
            Le nombre 9 n’est pas un nombre premier, car il a plus de deux diviseurs : div (9) = {1, 3, 9}.    */
-
 
         do
         {

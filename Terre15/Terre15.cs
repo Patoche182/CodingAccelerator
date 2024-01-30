@@ -13,7 +13,7 @@ class Terre15
 {
     static void Main()
     {
-        Console.WriteLine("J'ai terminé l'Epreuve de la Terre et c'était a bit hard.");
+        Console.WriteLine("J'ai terminé l'Epreuve de la Terre et c'était franchement hard !");
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.ReadKey();
     }
