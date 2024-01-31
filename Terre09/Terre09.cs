@@ -15,7 +15,7 @@ class Terre09
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        Console.WriteLine("Cette console affiche la Racine Carré d'un nombre, entier et positif : (ou 'exit' pour quitter).");
+        Console.WriteLine("Cette console affiche la Racine Carré d'un nombre, entier et positif :");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
         // Qu'est ce qu'une racine carré mathématiquement parlant : 
@@ -28,7 +28,7 @@ class Terre09
 
         do
         {
-            Console.WriteLine("Veuillez entrer un nombre");
+            Console.WriteLine("Veuillez entrer un nombre : (ou 'exit' pour quitter)");
             string baseNumberInput = Console.ReadLine();
 
             if (baseNumberInput.ToLower() == "exit")

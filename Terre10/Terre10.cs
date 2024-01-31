@@ -16,7 +16,7 @@ class Terre10
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        Console.WriteLine("Cette console affiche si le nombres donné est en Nombre Premier.");
+        Console.WriteLine("Cette console affiche si le nombre donné est un 'Nombre Premier'.");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
         /* NOMBRE PREMIER
@@ -43,7 +43,7 @@ class Terre10
 
                 if (isPrime)
                 {
-                    Console.WriteLine($"Oui, {number} est un nombre premier.");
+                    Console.WriteLine($"Ouiiiiiiii, {number} est un nombre premier. Bravo !");
                 }
                 else
                 {
@@ -52,12 +52,13 @@ class Terre10
             }
             else
             {
-                Console.WriteLine("Veuillez entrer un nombre entier positif.");
+                Console.WriteLine("/!\\ Vous n'avez pas entrer un nombre valide...");
             }
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
 
+    // Méthode :
     static bool EstNombrePremier(int n)
     {
         if (n <= 1)

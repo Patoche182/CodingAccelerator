@@ -36,9 +36,8 @@ class Terre06
             }
             else
             {
-                Console.WriteLine("Attention, ce n'est pas valide. Pour fermer ce programme écris : exit");
+                Console.WriteLine("Attention, ce n'est pas valide.");
             }
-            Console.WriteLine("----------=----------=----------=----------=----------");
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
@@ -46,10 +45,10 @@ class Terre06
     // Méthodes :
     static string Inverser(string chaine)
     {
-        string inverse = "";
+        string inverse = ""; // Initialisation
         for (int i = chaine.Length - 1; i >= 0; i--)
         {
-            // écrire les char un à un dans inverse
+            // écrire les Char un à un dans inverse
             inverse += chaine[i];
         }
         return inverse;

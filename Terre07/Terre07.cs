@@ -35,13 +35,13 @@ class Terre07
             if (chaine == "exit")
                 break;
 
-            if (chaine != "")
+            if (chaine != "") // on pourrait ajouter une condition pour que seul les lettres soit prise en compte :  if ((chaine != "") && (chaine != int))  ==>> Correction GPT ==>> if (!string.IsNullOrEmpty(chaine) && !chaine.Any(char.IsDigit)) 
             {
                 Console.WriteLine("La chaîne contient - " + Taille(chaine) + " - caractères.");
             }
             else
             {
-                Console.WriteLine("Attention, ce n'est pas valide. Pour fermer ce programme : exit");
+                Console.WriteLine("Attention, vous n'avez pas entré une chaine valide. \nEcrivez un mot, une phrase, un code à chiffres, etc ...");
             }
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
@@ -50,12 +50,12 @@ class Terre07
     // Méthodes :
     static string Taille(string chaine)
     {
-        int count = 0;
-        foreach (char lettre in chaine)
+        int count = 0; // on initialise notre variable Count à zéro
+        foreach (char lettre in chaine) // pour chaque lettre, et espace, dans notre chaine on ajoute +1 à notre variable count
         {
             count++;
         }
-        return count.ToString();
+        return count.ToString(); // on renvoie la valeur final de count dans en string
     }
 
 }

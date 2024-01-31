@@ -39,7 +39,6 @@ class Terre05
                 Console.WriteLine("Attention, la division par zéro est impossible!");
             }
             Console.WriteLine("----------=----------=----------=----------=----------");
-            Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
 

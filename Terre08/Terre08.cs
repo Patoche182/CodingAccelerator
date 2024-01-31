@@ -17,14 +17,13 @@ class Terre08
     static void Main()
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
         Console.WriteLine("Cette console affiche le résultat d’une puissance entre un nombre et un exposant.");
-        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
         do
         {
+            // On définie le NOMBRE
             Console.WriteLine("Veuillez entrer un NOMBRE : (ou 'exit' pour quitter)");
             string baseNumberInput = Console.ReadLine();
 
@@ -33,6 +32,7 @@ class Terre08
 
             if (double.TryParse(baseNumberInput, out double baseNumber))
             {
+                // On définie l'EXPOSANT
                 Console.WriteLine("Veuillez entrer un EXPOSANT : (ou 'exit' pour quitter)");
                 string exponentInput = Console.ReadLine();
 
@@ -45,14 +45,13 @@ class Terre08
                 }
                 else
                 {
-                    Console.WriteLine("Attention ! Veuillez entrer un exposant valide svp.");
+                    Console.WriteLine("Attention ! Vous n'avez pas entrer un exposant valide... Concentrez-vous ! \n|||||||||||||||| On recommence : ||||||||||||||||");
                 }
             }
             else
             {
-                Console.WriteLine("Attention ! Veuillez entrer un nombre svp. Pas de blagues !");
+                Console.WriteLine("Attention ! Vous n'avez pas entrer un nombre Valide... Pas de blagues !");
             }
-            Console.WriteLine("----------=----------=----------=----------=----------");
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
@@ -68,7 +67,6 @@ class Terre08
         return result;
     }
 }
-
 
 
 //class Terre08

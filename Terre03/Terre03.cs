@@ -42,7 +42,7 @@ class Terre03
         // Après Optimisation ChatGPT
         while (true)
         {
-            Console.Write("Veuillez entrer une lettre (ou 'exit' pour quitter) : ");
+            Console.Write("Veuillez entrer une lettre : (ou 'exit' pour quitter)");
             string userInput = Console.ReadLine().ToLower();
 
             if (userInput == "exit")
@@ -55,7 +55,9 @@ class Terre03
             }
             else
             {
+                Console.WriteLine("\n-------------=-------------=-------------=-------------=-------------");
                 Console.WriteLine("Entrée non valide. Vous avez entré un chiffre ou plusieurs caractères.");
+                Console.WriteLine("-------------=-------------=-------------=-------------=-------------\n");
             }
         }
     }
@@ -86,7 +88,6 @@ class Terre03
                 Console.Write(i);
             }
         }
-        Console.WriteLine("\n-------------\n");
     }
 }
 
