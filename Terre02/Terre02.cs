@@ -7,6 +7,10 @@ Exemples d’utilisation :
     suis
     solide
     !
+
+||||||||||||||||||| Correction : environment.getCommandLineArgs |||||||||||||||||||
+||||||||||||||||||| Correction : Pas besoin de filtrer en tant que mot (string)  |||||||||||||||||||
+
 */
 
 class Terre02

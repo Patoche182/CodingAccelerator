@@ -6,7 +6,11 @@ Exemples d’utilisation :
     abcdefghijklmnopqrstuvwxyz
     $>
 Attention : votre programme devra utiliser une boucle. 
+
+||||||||||||||||||| Correction : AsCii |||||||||||||||||||
 */
+
+
 
 // Méthode 1 :
 

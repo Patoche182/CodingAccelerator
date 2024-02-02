@@ -6,6 +6,8 @@ Exemples d’utilisation :
     exo.js
     $> node crevette.js
     crevette.js
+
+||||||||||||||||||| Correction : Assembly ou Get IO |||||||||||||||||||
 */
 
 using System.IO.Enumeration;

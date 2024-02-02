@@ -8,6 +8,9 @@ Exemples d’utilisation :
 Attention : je compte sur vous pour gérer les potentielles erreurs d’arguments.
 Fonctions interdites: 
 -La fonction pow
+
+||||||||||||||||||| Correction : générer les nombre négatifs  |||||||||||||||||||
+
  */
 
 using System;

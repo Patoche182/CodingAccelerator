@@ -6,6 +6,10 @@ Exemples d’utilisation :
     nopqrstuvwxyz
     $>
 Attention : votre programme devra utiliser une boucle.
+
+||||||||||||||||||| Correction : environment.getCommandLineArgs (pour récupérer mes arguments) |||||||||||||||||||
+||||||||||||||||||| Correction : chaine vide + incrémenter |||||||||||||||||||
+
 */
 
 class Terre03
