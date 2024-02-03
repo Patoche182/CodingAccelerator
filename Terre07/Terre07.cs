@@ -17,6 +17,8 @@ Fonctions interdites:
  */
 
 
+
+
 class Terre07
 {
     static void Main()

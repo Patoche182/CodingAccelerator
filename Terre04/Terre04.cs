@@ -15,6 +15,10 @@ Fonctions interdites:
 -En Ruby: even? et odd ?
 */
 
+
+
+
+
 class Terre04
 {
     static void Main()

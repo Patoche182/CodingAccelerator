@@ -12,6 +12,9 @@ Attention : votre programme devra utiliser une boucle.
 
 
 
+
+
+
 // Méthode 1 :
 
 class Terre00

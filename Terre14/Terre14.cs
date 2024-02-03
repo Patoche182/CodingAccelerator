@@ -13,6 +13,9 @@ Fonctions interdites:
 -La fonction sort
 */
 
+
+
+
 class Terre14
 {
     static void Main()

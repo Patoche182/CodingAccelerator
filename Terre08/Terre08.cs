@@ -13,6 +13,9 @@ Fonctions interdites:
 
  */
 
+
+
+
 using System;
 
 class Terre08

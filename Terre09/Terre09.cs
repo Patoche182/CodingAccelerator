@@ -9,6 +9,9 @@ Fonctions interdites:
 -La fonction sqrt
  */
 
+
+
+
 class Terre09
 {
     static void Main()

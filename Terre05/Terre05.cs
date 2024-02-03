@@ -11,6 +11,10 @@ Exemples d’utilisation :
     erreur.
 */
 
+
+
+
+
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 class Terre05
