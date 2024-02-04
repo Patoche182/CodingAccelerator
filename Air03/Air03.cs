@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*     03 - Air - 03
 
-namespace Air03
+
+*/
+
+
+
+class Air03
 {
-    internal class Air03
+    static void Main()
     {
+        Console.WriteLine("Epreuve de l'Air !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.ReadKey();
     }
 }
