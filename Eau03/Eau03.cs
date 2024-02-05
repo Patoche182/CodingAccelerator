@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*     03 - Eau03 - 03
 
-namespace Eau03
+
+*/
+
+
+
+class Eau03
 {
-    internal class Eau03
+    static void Main()
     {
+        Console.WriteLine("Epreuve de l'Eau !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.ReadKey();
     }
 }
