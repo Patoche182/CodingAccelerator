@@ -10,26 +10,40 @@ Attention : votre programme devra utiliser une boucle.
 ||||||||||||||||||| Correction : AsCii |||||||||||||||||||
 */
 
+// Méthode 0 (Ascii) :
 
-
-
-
-
-// Méthode 1 :
+using System.Text;
 
 class Terre00
 {
     static void Main()
     {
-        string lettreAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        foreach (char lettre in lettreAlphabet)
+        string alphabet = ""; // Création d'une chaîne pour stocker l'alphabet
+
+        for (int i = 97; i <= 122; i++) // Utilisation d'une boucle pour concaténer les lettres à la chaîne alphabet
         {
-            Console.Write(lettre.ToString().ToLower());
+            alphabet += (char)i; // Incrémentation de la variable alphabet
         }
-        Console.WriteLine();
-        Console.ReadLine();
+        Console.WriteLine(alphabet); // Affichage de l'alphabet sur une seule ligne
     }
 }
+
+// Méthode 1 :
+
+//class Terre00
+//{
+//    static void Main()
+//    {
+//        string lettreAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//        foreach (char lettre in lettreAlphabet)
+//        {
+//            Console.Write(lettre.ToString().ToLower());
+//        }
+//        Console.WriteLine();
+//        Console.ReadLine();
+//    }
+//}
+
 
 // Méthode 2 :
 
