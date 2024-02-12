@@ -8,12 +8,9 @@ Exemples d’utilisation :
     solide
     !
 
-||||||||||||||||||| Correction : environment.getCommandLineArgs |||||||||||||||||||
-||||||||||||||||||| Correction : Pas besoin de filtrer en tant que mot (string)  |||||||||||||||||||
-
+|||||||||||||||||||||||| Correction : environment.getCommandLineArgs ||||||||||||||||||||||||
+|||||||||||||||||||||||| Correction : Pas besoin de filtrer en tant que mot (string)  ||||||||||||||||||||||||
 */
-
-
 
 
 
@@ -29,7 +26,7 @@ class Terre02
 
             //// Methode 1:
 
-            //            string[] args = {"Je s'appelle Groot !", "Je suis Patrice...", "\\m/_Children_Of_Bodom COB"};
+            //            string[] args = {"Je s'appelle Groot !", "Je suis là...", "\\m/_Children_Of_Bodom COB"};
             //            GetArgs(args);
             //        }
 

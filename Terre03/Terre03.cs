@@ -7,12 +7,9 @@ Exemples d’utilisation :
     $>
 Attention : votre programme devra utiliser une boucle.
 
-||||||||||||||||||| Correction : environment.getCommandLineArgs (pour récupérer mes arguments) |||||||||||||||||||
-||||||||||||||||||| Correction : chaine vide + incrémenter |||||||||||||||||||
-
+|||||||||||||||||||||||| Correction : environment.getCommandLineArgs (pour récupérer mes arguments) ||||||||||||||||||||||||
+|||||||||||||||||||||||| Correction : chaine vide + incrémenter ||||||||||||||||||||||||
 */
-
-
 
 
 

@@ -7,9 +7,8 @@ Exemples d’utilisation :
     $> node crevette.js
     crevette.js
 
-||||||||||||||||||| Correction : Assembly ou Get IO |||||||||||||||||||
+|||||||||||||||||||||||| Correction : Assembly ou Get IO ||||||||||||||||||||||||
 */
-
 
 
 using System.Diagnostics;
@@ -31,8 +30,6 @@ class Terre01
         // Afficher le nom du fichier source
         Console.WriteLine(fichierSource);
     }
-
-
 
 
 

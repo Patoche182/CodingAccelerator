@@ -7,11 +7,10 @@ Exemples d’utilisation :
     $>
 Attention : votre programme devra utiliser une boucle. 
 
-||||||||||||||||||| Correction : AsCii |||||||||||||||||||
+|||||||||||||||||||||||| Correction : AsCii ||||||||||||||||||||||||
 */
 
 // Méthode 0 (Ascii) :
-
 using System.Text;
 
 class Terre00
