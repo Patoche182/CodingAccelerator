@@ -9,7 +9,7 @@ Exemples d’utilisation :
     !
 
 |||||||||||||||||||||||| Correction : environment.getCommandLineArgs ||||||||||||||||||||||||
-|||||||||||||||||||||||| Correction : Pas besoin de filtrer en tant que mot (string)  ||||||||||||||||||||||||
+|||||||||||||||||||||||| Objectif : apprendre comment récupérer le chemin de la localisation d'un fichier et le formater (en utilisant Assembly.Get) ||||||||||||||||||||||||
 */
 
 
