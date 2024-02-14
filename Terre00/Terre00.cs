@@ -7,11 +7,10 @@ Exemples d’utilisation :
     $>
 Attention : votre programme devra utiliser une boucle. 
 
-|||||||||||||||||||||||| Correction : AsCii ||||||||||||||||||||||||
+|||||||||||||||||||||||| Objectif : apprendre qu'on peut récupérer simplement chaque caractère a l'aide d'un code ASCII ||||||||||||||||||||||||
 */
 
 // Méthode 0 (Ascii) :
-using System.Text;
 
 class Terre00
 {
@@ -28,7 +27,6 @@ class Terre00
 }
 
 // Méthode 1 :
-
 //class Terre00
 //{
 //    static void Main()
@@ -45,7 +43,6 @@ class Terre00
 
 
 // Méthode 2 :
-
 //class Terre00
 //{
 //    static void Main()
