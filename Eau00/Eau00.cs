@@ -14,12 +14,35 @@ $>
 
 
 
+using System.ComponentModel;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 class Eau00
 {
     static void Main()
     {
         Console.WriteLine("Epreuve de l'Eau !");
         Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.ReadKey();
+
+
+        int centaine = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            int dizaine = 0;
+            for (int j = 0; j < 10; j++)
+            {
+                int unite = 0;
+                for (int k = 0; k < 10; k++)
+                {
+                    if ((unite != dizaine) && (dizaine != centaine) && (unite != centaine) && (unite > dizaine) && (dizaine > centaine))
+                    {
+                        Console.WriteLine($"{centaine}" + $"{dizaine}" + $"{unite}");
+                    }
+                    unite = unite + 1;
+                }
+                dizaine = dizaine + 1;
+            }
+            centaine = centaine + 1;
+        }
     }
 }
