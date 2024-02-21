@@ -13,17 +13,13 @@ $>
 */
 
 
-
-using System.ComponentModel;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
 class Eau00
 {
     static void Main()
     {
-        Console.WriteLine("Epreuve de l'Eau !");
         Console.WriteLine("==========-==========-==========-==========-==========");
-
+        Console.WriteLine("Epreuve de l'Eau00 !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
 
         int centaine = 0;
         for (int i = 0; i < 10; i++)
