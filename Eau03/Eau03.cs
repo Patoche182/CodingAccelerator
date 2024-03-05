@@ -15,7 +15,7 @@ class Eau03
 {
     static void Main()
     {
-        Console.WriteLine("Epreuve de l'Eau !");
+        Console.WriteLine("Epreuve de l'Eau03 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.ReadKey();
     }

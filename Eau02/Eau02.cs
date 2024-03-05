@@ -16,14 +16,23 @@ Bonjour 36
 Afficher error et quitter le programme en cas de problèmes d’arguments.
 */
 
-
-
 class Eau02
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        Console.WriteLine("Epreuve de l'Eau !");
         Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.ReadKey();
+        Console.WriteLine("Epreuve de l'Eau02 !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
+        if (args.Length <= 0)
+        {
+            Console.WriteLine("error");
+        }
+        else
+        {
+            for (int i = args.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(args[i]);
+            }
+        }
     }
 }

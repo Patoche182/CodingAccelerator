@@ -8,8 +8,6 @@ $> python exo.py
 $>
 */
 
-
-
 using System.ComponentModel;
 
 class Eau01
@@ -20,12 +18,11 @@ class Eau01
         Console.WriteLine("Epreuve de l'Eau01 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
-
         for (int first = 0; first < 100; first++)
         {
             for (int second = 0; second < 100; second++)
             {
-                if (second > first) // si le 2nd chiffre est + grand que le 1er je Print
+                if (second > first) // si le 2nd chiffre est + grand que le 1er je l'affiche
                 {
                     Console.WriteLine($"{first.ToString("00")} " + $"{second.ToString("00")}");
                 }
