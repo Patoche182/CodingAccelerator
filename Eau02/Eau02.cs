@@ -16,6 +16,8 @@ Bonjour 36
 Afficher error et quitter le programme en cas de problèmes d’arguments.
 */
 
+using System.Threading.Channels;
+
 class Eau02
 {
     static void Main(string[] args)
@@ -23,6 +25,7 @@ class Eau02
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau02 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
+
         if (args.Length <= 0)
         {
             Console.WriteLine("error");

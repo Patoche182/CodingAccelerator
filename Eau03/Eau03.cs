@@ -10,13 +10,38 @@ Afficher -1 si le paramètre est négatif ou mauvais.
 */
 
 
-
 class Eau03
 {
-    static void Main()
+    static void Main(string[] args)
     {
+        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau03 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.ReadKey();
+
+        Console.WriteLine("Entrez la valeur de N :");
+        int n = int.Parse(Console.ReadLine());
+
+        int result = Fibonacci(n);
+
+        Console.WriteLine($"Le {n}-ème élément de la suite de Fibonacci est : {result}");
+    }
+
+    static int Fibonacci(int n)
+    {
+        if (n <= 1)
+            return n;
+
+        int a = 0;
+        int b = 1;
+        int temp = 0;
+
+        for (int i = 2; i <= n; i++)
+        {
+            temp = a + b;
+            a = b;
+            b = temp;
+        }
+
+        return b;
     }
 }
