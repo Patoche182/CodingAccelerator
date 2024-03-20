@@ -2,7 +2,7 @@
   "profiles": {
     "Eau02": {
       "commandName": "Project",
-      "commandLineArgs": "\"Je s'appelle Groot !\" \"Je suis là...\" \"Not Guilty\" 123456 Done \"It's a trapt !\" , , ,,,"
+      "commandLineArgs": "\"Je s'appelle Groot !\" \"Je suis là...\" \"Not Guilty\" 123456 Done \"It's a trap !\" , , ,,,"
     }
   }
 }

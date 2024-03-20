@@ -9,7 +9,6 @@ $>
 Afficher -1 si le paramètre est négatif ou mauvais.
 */
 
-
 class Eau03
 {
     static void Main(string[] args)
@@ -33,7 +32,7 @@ class Eau03
 
         int a = 0;
         int b = 1;
-        int temp = 0;
+        int temp;
 
         for (int i = 2; i <= n; i++)
         {

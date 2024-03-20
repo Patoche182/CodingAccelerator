@@ -8,8 +8,6 @@ $> python exo.py
 $>
 */
 
-using System.ComponentModel;
-
 class Eau01
 {
     static void Main()

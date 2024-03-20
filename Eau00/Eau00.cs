@@ -12,7 +12,6 @@ $>
 000 n’est pas là parce que cette combinaison ne comporte pas exclusivement des chiffres différents les uns des autres.
 */
 
-
 class Eau00
 {
     static void Main()
