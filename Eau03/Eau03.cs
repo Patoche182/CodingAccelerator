@@ -27,17 +27,25 @@ class Eau03
 
     static int Fibonacci(int n)
     {
-        if (n <= 1)
+        if (n < 0 || n.GetType() != typeof(int))
+            return -1;
+        else if (n <= 1)
             return n;
 
         int a = 0;
         int b = 1;
         int temp;
 
+        /*
+       À chaque itération de la boucle, nous calculons la somme de "a" et "b" et la stockons dans "temp". 
+       Puis nous mettons à jour "a" avec la valeur de "b" et "b" avec la valeur de "temp".
+       Cela nous permet de déplacer "a" et "b" vers les nombres suivants dans la suite de Fibonacci.
+         */
+
         for (int i = 2; i <= n; i++)
         {
-            temp = a + b;
-            a = b;
+            temp = a + b; 
+            a = b; 
             b = temp;
         }
 
