@@ -19,5 +19,43 @@ class Eau06
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau06 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
+
+        if (args.Length == 0)
+        {
+            Console.WriteLine("Veuillez fournir une chaîne de caractères en argument : ");
+            string input = Console.ReadLine();
+            AfficherMajusculeUneLettreSurDeux(input);
+        }
+        else
+        {
+            AfficherMajusculeUneLettreSurDeux(args[0]);
+        }
+    }
+
+    static void AfficherMajusculeUneLettreSurDeux(string chaine)
+    {
+        bool majuscule = true;
+
+        foreach (char c in chaine)
+        {
+            if (char.IsLetter(c))
+            {
+                if (majuscule)
+                {
+                    Console.Write(char.ToUpper(c));
+                }
+                else
+                {
+                    Console.Write(char.ToLower(c));
+                }
+                majuscule = !majuscule;
+            }
+            else
+            {
+                Console.Write(c);
+            }
+        }
+
+        Console.WriteLine();
     }
 }

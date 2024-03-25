@@ -17,5 +17,53 @@ class Eau04
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau04 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
+
+        int nombreDonne;
+        if (args.Length == 0)
+        {
+            Console.WriteLine("Veuillez entrer un nombre en argument : ");
+            string input = Console.ReadLine();
+            if (!int.TryParse(input, out nombreDonne) || nombreDonne < 0)
+            {
+                Console.WriteLine("Veuillez entrer un nombre valide et positif.");
+                Console.WriteLine("-1");
+                return;
+            }
+        }
+        else
+        {
+            if (!int.TryParse(args[0], out nombreDonne) || nombreDonne < 0)
+            {
+                Console.WriteLine("Veuillez entrer un nombre valide et positif.");
+                Console.WriteLine("-1");
+                return;
+            }
+        }
+
+        int nombrePremierSuivant = TrouverNombrePremierSuivant(nombreDonne);
+        Console.WriteLine($"Le premier nombre premier supérieur à {nombreDonne} est {nombrePremierSuivant}");
+    }
+
+    static bool EstPremier(int nombre)
+    {
+        if (nombre <= 1)
+            return false;
+        for (int i = 2; i <= Math.Sqrt(nombre); i++)
+        {
+            if (nombre % i == 0)
+                return false;
+        }
+        return true;
+    }
+
+    static int TrouverNombrePremierSuivant(int nombre)
+    {
+        int nombreSuivant = nombre + 1;
+        while (true)
+        {
+            if (EstPremier(nombreSuivant))
+                return nombreSuivant;
+            nombreSuivant++;
+        }
     }
 }

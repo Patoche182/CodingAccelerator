@@ -21,5 +21,30 @@ class Eau05
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau05 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
+
+        if (args.Length < 2)
+        {
+            Console.WriteLine("Veuillez fournir deux chaînes de caractères en argument : ");
+            string input = Console.ReadLine();
+            string[] inputArray = input.Split(' ');
+            if (inputArray.Length < 2)
+            {
+                Console.WriteLine("Veuillez fournir deux chaînes de caractères valides.");
+                return;
+            }
+            args = inputArray;
+        }
+
+        string chaine1 = args[0];
+        string chaine2 = args[1];
+
+        bool trouve = TrouverSousChaine(chaine1, chaine2);
+        Console.WriteLine(trouve);
+    }
+
+    static bool TrouverSousChaine(string chaine, string sousChaine)
+    {
+        // Utilisez la méthode Contains pour vérifier si la sous-chaîne est présente dans la chaîne.
+        return chaine.Contains(sousChaine);
     }
 }
