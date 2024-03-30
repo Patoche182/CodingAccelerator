@@ -41,7 +41,7 @@ class Eau04
         }
 
         int nombrePremierSuivant = TrouverNombrePremierSuivant(nombreDonne);
-        Console.WriteLine($"Le premier nombre premier supérieur à {nombreDonne} est {nombrePremierSuivant}");
+        Console.WriteLine($"Le premier nombre premier supérieur à {nombreDonne} est : {nombrePremierSuivant}");
     }
 
     static bool EstPremier(int nombre)
