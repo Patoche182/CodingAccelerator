@@ -14,12 +14,58 @@ false
 
 Afficher error et quitter le programme en cas de problèmes d’arguments.
  */
+using System;
+
 class Eau08
 {
     static void Main(string[] args)
     {
+        DisplayHeader();
+        string input = GetInput(args);
+        ProcessInput(input);
+        WaitForExit();
+    }
+
+    static void DisplayHeader()
+    {
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau08 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
+    }
+
+    static string GetInput(string[] args)
+    {
+        if (args.Length != 0)
+        {
+            return args[0];
+        }
+        else
+        {
+            Console.WriteLine("Veuillez entrer une chaîne de caractères à vérifier :");
+            return Console.ReadLine();
+        }
+    }
+
+    static void ProcessInput(string input)
+    {
+        Console.WriteLine(IsNumeric(input) ? "true" : "false");
+    }
+
+    static bool IsNumeric(string str)
+    {
+        foreach (char c in str)
+        {
+            if (!char.IsDigit(c))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    static void WaitForExit()
+    {
+        Console.WriteLine("Appuyez sur n'importe quelle touche pour quitter...");
+        Console.ReadKey();
     }
 }
