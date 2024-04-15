@@ -29,9 +29,7 @@ class Eau08
     static void DisplayHeader()
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau08 !");
-        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("==========-==========-==========-==========-==========");
     }
 
