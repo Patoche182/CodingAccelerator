@@ -10,7 +10,7 @@ $> python exo.py 42
 true
 
 $> python exo.py “Bonjour 36”
-falsedfdfdf dfdf
+false
 
 Afficher error et quitter le programme en cas de problèmes d’arguments.
  */
