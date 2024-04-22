@@ -21,5 +21,26 @@ class Eau09
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau09 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
+
+        // Demander à l'utilisateur d'entrer les deux nombres
+        Console.WriteLine("Entrez le nombre minimum :");
+        int min = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Entrez le nombre maximum :");
+        int max = int.Parse(Console.ReadLine());
+
+        // Vérifier si le maximum est supérieur au minimum
+        if (max <= min)
+        {
+            Console.WriteLine("Le nombre maximum doit être supérieur au nombre minimum.");
+            return; // Sortir du programme
+        }
+
+        // Afficher les valeurs entre min et max dans l'ordre croissant
+        Console.WriteLine("Les valeurs entre " + min + " et " + max + " (exclus) sont :");
+        for (int i = min; i < max; i++)
+        {
+            Console.WriteLine(i);
+        }
     }
 }

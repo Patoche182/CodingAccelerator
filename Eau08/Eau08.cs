@@ -14,8 +14,6 @@ false
 
 Afficher error et quitter le programme en cas de problèmes d’arguments.
  */
-using System;
-
 class Eau08
 {
     static void Main(string[] args)
