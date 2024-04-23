@@ -22,10 +22,59 @@ Wikipedia vous présentera une belle description de cet algorithme de tri.
  */
 class Eau12
 {
-    static void Main(string[] args)
+    // Fonction pour implémenter le tri à bulle
+    static List<int> my_bubble_sort(List<int> array)
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("Epreuve de l'Eau12 !");
-        Console.WriteLine("==========-==========-==========-==========-==========");
+        int n = array.Count;
+        bool swapped;
+
+        do
+        {
+            swapped = false;
+            for (int i = 0; i < n - 1; i++)
+            {
+                if (array[i] > array[i + 1])
+                {
+                    // Échange des éléments
+                    int temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
+                    swapped = true;
+                }
+            }
+            n--; // Chaque boucle de tri garantit que le dernier élément est le plus grand
+        } while (swapped);
+
+        return array;
+    }
+
+    static void Main()
+    {
+        try
+        {
+            Console.WriteLine("Entrez des nombres séparés par des espaces :");
+            var input = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(input))
+            {
+                Console.WriteLine("error");
+                return;
+            }
+
+            // Convertir les entrées en liste de nombres
+            var numbers = input.Split(' ')
+                               .Select(x => int.Parse(x))
+                               .ToList();
+
+            // Appeler le tri à bulle
+            var sorted = my_bubble_sort(numbers);
+
+            // Afficher la liste triée
+            Console.WriteLine(string.Join(" ", sorted));
+        }
+        catch (Exception)
+        {
+            Console.WriteLine("error");
+        }
     }
 }
