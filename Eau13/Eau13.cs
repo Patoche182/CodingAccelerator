@@ -27,5 +27,62 @@ class Eau13
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau13 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
+
+
+        // Fonction pour implémenter le tri par sélection
+        static List<int> SelectionSort(List<int> array)
+        {
+            int n = array.Count;
+
+            for (int i = 0; i < n - 1; i++)
+            {
+                int minIndex = i;
+                // Trouver l'indice du plus petit élément restant
+                for (int j = i + 1; j < n; j++)
+                {
+                    if (array[j] < array[minIndex])
+                    {
+                        minIndex = j;
+                    }
+                }
+
+                // Échanger le plus petit élément avec l'élément à la position courante
+                if (minIndex != i)
+                {
+                    int temp = array[minIndex];
+                    array[minIndex] = array[i];
+                    array[i] = temp;
+                }
+            }
+            return array;
+        }
+
+        // Fonction principale qui accepte des arguments et appelle la fonction de tri
+        static void Main(string[] args)
+        {
+            if (args.Length == 0)
+            {
+                Console.WriteLine("error");
+                return;
+            }
+
+            List<int> numbers = new List<int>();
+
+            foreach (string arg in args)
+            {
+                int number;
+                if (int.TryParse(arg, out number))
+                {
+                    numbers.Add(number);
+                }
+                else
+                {
+                    Console.WriteLine("error");
+                    return;
+                }
+            }
+            List<int> sortedNumbers = SelectionSort(numbers);
+            Console.WriteLine(string.Join(" ", sortedNumbers));
+        }
     }
 }

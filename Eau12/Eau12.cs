@@ -17,17 +17,14 @@ $> python exo.py test test test
 error
 
 Afficher error et quitter le programme en cas de problèmes d’arguments.
-
 Wikipedia vous présentera une belle description de cet algorithme de tri.
  */
 class Eau12
 {
-    // Fonction pour implémenter le tri à bulle
     static List<int> my_bubble_sort(List<int> array)
     {
         int n = array.Count;
         bool swapped;
-
         do
         {
             swapped = false;
@@ -44,7 +41,6 @@ class Eau12
             }
             n--; // Chaque boucle de tri garantit que le dernier élément est le plus grand
         } while (swapped);
-
         return array;
     }
 

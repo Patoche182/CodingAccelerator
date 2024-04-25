@@ -72,8 +72,6 @@ class Eau11
 
 
 
-
-
 //        // Vérifier si on a au moins deux arguments
 //        if (args.Length < 2)
 //        {
