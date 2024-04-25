@@ -28,62 +28,58 @@ class Eau13
         Console.WriteLine("Epreuve de l'Eau13 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
+        List<int> numbers = new List<int>();
+        string input;
 
-        // Fonction pour implémenter le tri par sélection
-        static List<int> SelectionSort(List<int> array)
+        Console.WriteLine("Entrez des nombres entiers séparés par des espaces, puis appuyez sur Entrée :");
+
+        input = Console.ReadLine(); // Lire la ligne entrée par l'utilisateur
+        string[] inputs = input.Split(' '); // Diviser par les espaces
+
+        foreach (string arg in inputs)
         {
-            int n = array.Count;
-
-            for (int i = 0; i < n - 1; i++)
+            int number;
+            if (int.TryParse(arg, out number))
             {
-                int minIndex = i;
-                // Trouver l'indice du plus petit élément restant
-                for (int j = i + 1; j < n; j++)
-                {
-                    if (array[j] < array[minIndex])
-                    {
-                        minIndex = j;
-                    }
-                }
-
-                // Échanger le plus petit élément avec l'élément à la position courante
-                if (minIndex != i)
-                {
-                    int temp = array[minIndex];
-                    array[minIndex] = array[i];
-                    array[i] = temp;
-                }
+                numbers.Add(number);
             }
-            return array;
-        }
-
-        // Fonction principale qui accepte des arguments et appelle la fonction de tri
-        static void Main(string[] args)
-        {
-            if (args.Length == 0)
+            else
             {
-                Console.WriteLine("error");
+                Console.WriteLine($"Erreur : '{arg}' n'est pas un nombre entier.");
                 return;
             }
+        }
 
-            List<int> numbers = new List<int>();
+        List<int> sortedNumbers = SelectionSort(numbers);
+        Console.WriteLine("Nombres triés : " + string.Join(" ", sortedNumbers));
+    }
 
-            foreach (string arg in args)
+    // Fonction pour implémenter le tri par sélection
+    static List<int> SelectionSort(List<int> array)
+    {
+        int n = array.Count;
+
+        for (int i = 0; i < n - 1; i++)
+        {
+            int minIndex = i;
+            // Trouver l'indice du plus petit élément restant
+            for (int j = i + 1; j < n; j++)
             {
-                int number;
-                if (int.TryParse(arg, out number))
+                if (array[j] < array[minIndex])
                 {
-                    numbers.Add(number);
-                }
-                else
-                {
-                    Console.WriteLine("error");
-                    return;
+                    minIndex = j;
                 }
             }
-            List<int> sortedNumbers = SelectionSort(numbers);
-            Console.WriteLine(string.Join(" ", sortedNumbers));
+
+            // Échanger le plus petit élément avec l'élément à la position courante
+            if (minIndex != i)
+            {
+                int temp = array[minIndex];
+                array[minIndex] = array[i];
+                array[i] = temp;
+            }
         }
+        return array;
     }
 }
 

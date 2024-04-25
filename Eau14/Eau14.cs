@@ -18,50 +18,46 @@ class Eau14
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau14 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
-        // Fonction pour trier les éléments selon l'ordre ASCII avec le tri par sélection
-        static List<string> SelectionSort(List<string> array)
+
+        // Demander à l'utilisateur de saisir des chaînes de texte
+        Console.WriteLine("Entrez des chaînes de texte séparées par des espaces, puis appuyez sur Entrée :");
+
+        string input = Console.ReadLine(); // Lire l'entrée utilisateur
+        List<string> elements = new List<string>(input.Split(' ')); // Diviser l'entrée en listes de chaînes
+
+        // Trier les éléments par ordre ASCII
+        List<string> sortedElements = SelectionSort(elements);
+
+        Console.WriteLine("Chaînes triées par ordre ASCII : " + string.Join(" ", sortedElements));
+    }
+
+    // Fonction pour trier les éléments selon l'ordre ASCII avec le tri par sélection
+    static List<string> SelectionSort(List<string> array)
+    {
+        int n = array.Count;
+
+        for (int i = 0; i < n - 1; i++)
         {
-            int n = array.Count;
-
-            for (int i = 0; i < n - 1; i++)
+            int minIndex = i;
+            // Chercher le plus petit élément en ordre ASCII
+            for (int j = i + 1; j < n; j++)
             {
-                int minIndex = i;
-                // Chercher le plus petit élément en ordre ASCII
-                for (int j = i + 1; j < n; j++)
+                if (string.Compare(array[j], array[minIndex], StringComparison.Ordinal) < 0)
                 {
-                    if (string.Compare(array[j], array[minIndex], StringComparison.Ordinal) < 0)
-                    {
-                        minIndex = j;
-                    }
-                }
-
-                // Échanger si nécessaire
-                if (minIndex != i)
-                {
-                    string temp = array[minIndex];
-                    array[minIndex] = array[i];
-                    array[i] = temp;
+                    minIndex = j;
                 }
             }
 
-            return array;
-        }
-
-        static void Main(string[] args)
-        {
-            if (args.Length == 0)
+            // Échanger si nécessaire
+            if (minIndex != i)
             {
-                Console.WriteLine("error");
-                return;
+                string temp = array[minIndex];
+                array[minIndex] = array[i];
+                array[i] = temp;
             }
-
-            List<string> elements = new List<string>(args);
-
-            // Trier les éléments par ordre ASCII
-            List<string> sortedElements = SelectionSort(elements);
-
-            Console.WriteLine(string.Join(" ", sortedElements));
         }
+
+        return array;
     }
 }
 

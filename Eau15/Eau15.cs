@@ -16,5 +16,9 @@ class Eau15
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau15 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
+
+        Console.WriteLine("Comment avez vous trouver cette Epreuve de l'EAU ?");
+        string mot = Console.ReadLine();
+        Console.WriteLine($"J’ai terminé l’Épreuve de l’Eau et c’était {mot}");
     }
 }
