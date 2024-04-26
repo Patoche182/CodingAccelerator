@@ -55,7 +55,7 @@ class Eau08
     {
         foreach (char c in str)
         {
-            if (!char.IsDigit(c))
+            if (!char.IsDigit(c)) // Refaire avec les code ASCII 30 -39 pour vérifer que c'est bien un chiffre
             {
                 return false;
             }

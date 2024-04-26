@@ -24,7 +24,7 @@ class Eau02
         Console.WriteLine("Epreuve de l'Eau02 !");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
-        if (args.Length <= 0)
+        if (args.Length <= 0) // (args.Length < 2) 
         {
             Console.WriteLine("error");
         }

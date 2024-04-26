@@ -45,7 +45,7 @@ class Eau11
             }
 
             // Trier la liste
-            numbers.Sort();
+            numbers.Sort(); // Trop facile -  Refaire
 
             // Calculer la différence minimale absolue
             int minDifference = int.MaxValue;

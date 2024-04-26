@@ -25,9 +25,9 @@ class Eau05
         if (args.Length < 2)
         {
             Console.WriteLine("Veuillez fournir deux chaînes de caractères en argument : ");
-            string input = Console.ReadLine();
+            string input = Console.ReadLine(); // utiliser le args[] truc bidule
             string[] inputArray = input.Split(' ');
-            if (inputArray.Length < 2)
+            if (inputArray.Length < 2) // si Différent de 2
             {
                 Console.WriteLine("Veuillez fournir deux chaînes de caractères valides.");
                 return;
@@ -45,6 +45,6 @@ class Eau05
     static bool TrouverSousChaine(string chaine, string sousChaine)
     {
         // Utilisez la méthode Contains pour vérifier si la sous-chaîne est présente dans la chaîne.
-        return chaine.Contains(sousChaine);
+        return chaine.Contains(sousChaine); // Ne pas utiliser .Contains() => boucle for ... + Considérer les casse !!!
     }
 }

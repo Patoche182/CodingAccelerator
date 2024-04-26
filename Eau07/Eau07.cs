@@ -33,7 +33,7 @@ class Eau07
 
     static string MettrePremiereLettreMajuscule(string phrase)
     {
-        string[] mots = phrase.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+        string[] mots = phrase.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries); // Splitter par espace uniquement
         for (int i = 0; i < mots.Length; i++)
         {
             mots[i] = PremierCaractereMajuscule(mots[i]);
