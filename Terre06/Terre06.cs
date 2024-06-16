@@ -13,9 +13,6 @@ Fonctions interdites:
 */
 
 
-
-
-
 class Terre06
 {
     static void Main()
