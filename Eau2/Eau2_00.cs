@@ -13,14 +13,13 @@ $>
 000 n’est pas là parce que cette combinaison ne comporte pas exclusivement des chiffres différents les uns des autres.
 */
 
-namespace Eau2
+namespace Eau2 // byHarry
 {
     internal class Eau2_00
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-
 
             // centaine
             for (int i = 0; i < 10; i++)
