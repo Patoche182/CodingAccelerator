@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Eau03": {
+      "commandName": "Project",
+      "commandLineArgs": "-3"
+    }
+  }
+}

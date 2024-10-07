@@ -9,28 +9,39 @@ $>
 Afficher -1 si le paramètre est négatif ou mauvais.
 */
 
+using System.Net.Http.Headers;
+
 class Eau03
 {
+
+    // METHODE RESOLUTION
     static void Main(string[] args)
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("Epreuve de l'Eau03 !");
-        Console.WriteLine("==========-==========-==========-==========-==========");
+        if (Eau03.IsValidArguments(args))
+        {
+            string argument = args[0];
+            if (Eau03.IsValidNumber(argument))
+            {
+                int n = int.Parse(args[0]);
+                int result = Fibonacci(n);
 
-        Console.WriteLine("Entrez la valeur de N :");
-        int n = int.Parse(Console.ReadLine());
-
-        int result = Fibonacci(n);
-
-        Console.WriteLine($"Le {n}-ème élément de la suite de Fibonacci est : {result}");
+                if (result == -1)
+                {
+                    return;
+                }
+                Console.WriteLine($"Le {n}-ème élément de la suite de Fibonacci est : {result}");
+            }
+        }
     }
 
+    // METHODE UTILITAIRE
     static int Fibonacci(int n)
     {
-        if (n < 0 || n.GetType() != typeof(int))
-            return -1;
-        else if (n <= 1)
-            return n;
+        if (!IsPositiveNumber(n))
+        {
+            int wrongNumber = -1;
+            return wrongNumber;
+        }
 
         int a = 0;
         int b = 1;
@@ -44,11 +55,48 @@ class Eau03
 
         for (int i = 2; i <= n; i++)
         {
-            temp = a + b; 
-            a = b; 
+            temp = a + b;
+            a = b;
             b = temp;
         }
-
         return b;
+    }
+
+    // GESTION ERREUR
+    public static bool IsValidArguments(string[] arguments)
+    {
+        if (arguments.Length == 1)
+        {
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("Error ! Please only one argument.");
+            return false;
+        }
+    }
+    public static bool IsValidNumber(string number)
+    {
+        if (int.TryParse(number, out _))
+        {
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("Error ! Please only number.");
+            return false;
+        }
+    }
+    public static bool IsPositiveNumber(int number)
+    {
+        if (number > 0)
+        {
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("-1");
+            return false;
+        }
     }
 }

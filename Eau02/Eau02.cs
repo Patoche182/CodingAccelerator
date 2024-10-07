@@ -18,6 +18,44 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 class Eau02
 {
+    // METHODE RESOLUTION
+    static void Main(string[] arguments)
+    {
+        if (Eau02.IsValidArguments(arguments))
+        {
+            Eau02.ReverseArguments(arguments);
+        }
+    }
+
+    // METHODE UTILITAIRE
+    public static void ReverseArguments(string[] arguments)
+    {
+        for (int i = arguments.Length - 1; i >= 0; i--)
+        {
+            Console.WriteLine(arguments[i]);
+        }
+    }
+
+    // GESTION ERREUR
+    public static bool IsValidArguments(string[] arguments)
+    {
+        if (arguments.Length > 1)
+        {
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("error");
+            return false;
+        }
+    }
+}
+
+
+
+/*
+class Eau02
+{
     static void Main(string[] args)
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
@@ -37,3 +75,4 @@ class Eau02
         }
     }
 }
+ */
