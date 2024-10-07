@@ -13,7 +13,10 @@ class Eau01
     static void Main()
     {
         Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau01 !");
+        Console.WriteLine("Epreuve de l'Eau01 !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("==========-==========-==========-==========-==========");
 
         for (int first = 0; first < 100; first++)
@@ -21,9 +24,9 @@ class Eau01
             for (int second = 0; second < 100; second++)
             {
                 if (second > first) // si le 2nd chiffre est + grand que le 1er je l'affiche
-                {
-                    Console.WriteLine($"{first.ToString("00")} " + $"{second.ToString("00")}");
-                }
+                    {
+                        Console.WriteLine($"{first.ToString("00")} " + $"{second.ToString("00")}");
+                    }
             }
         }
     }
