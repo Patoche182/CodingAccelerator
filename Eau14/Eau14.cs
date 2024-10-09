@@ -17,7 +17,7 @@ class Eau14
     {
         Console.WriteLine("==========-==========-==========-==========");
         Console.WriteLine("Epreuve de l'Eau14 !");
-        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========");
 
         // Demander à l'utilisateur de saisir des chaînes de texte
         Console.WriteLine("Entrez des chaînes de texte séparées par des espaces, puis appuyez sur Entrée :");
