@@ -19,9 +19,9 @@ class Eau04
 
     static void Main(string[] args)
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("Epreuve de l'Eau04 !");
-        Console.WriteLine("==========-==========-==========-==========-==========");
+        //Console.WriteLine("==========-==========-==========-==========-==========");
+        //Console.WriteLine("Epreuve de l'Eau04 !");
+        //Console.WriteLine("==========-==========-==========-==========-==========");
 
         int nombreDonne;
         if (args.Length == 0) // Bizare à checker
