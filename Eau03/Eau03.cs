@@ -13,7 +13,6 @@ using System.Net.Http.Headers;
 
 class Eau03
 {
-
     // METHODE RESOLUTION
     static void Main(string[] args)
     {
