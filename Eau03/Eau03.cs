@@ -29,7 +29,7 @@ class Eau03
                 {
                     return;
                 }
-                Console.WriteLine($"Le {n}-ème élément de la suite de Fibonacci est : {result}");
+                Console.WriteLine($"Le {n}ème élément de la suite de Fibonacci est : {result}");
             }
         }
     }
