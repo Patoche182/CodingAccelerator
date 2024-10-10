@@ -12,16 +12,15 @@ Afficher -1 si le paramètre est négatif ou mauvais.
 
 class Eau04
 {
-
     // METHODE RESOLUTION
     // METHODE UTILITAIRE
     // GESTION ERREUR
 
     static void Main(string[] args)
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Epreuve de l'Eau04 !");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("Epreuve de l'Eau04 !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
 
         int nombreDonne;
         if (args.Length == 0) // Bizare à checker
