@@ -12,10 +12,6 @@ class Eau01
 {
     static void Main()
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("Epreuve de l'Eau01 !");
-        Console.WriteLine("==========-==========-==========-==========-==========");
-
         for (int first = 0; first < 100; first++)
         {
             for (int second = 0; second < 100; second++)
