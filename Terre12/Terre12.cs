@@ -9,8 +9,6 @@ Attention : midi et minuit.
 */
 
 
-
-
 class Terre12
 {
     static void Main(string[] args)

@@ -11,7 +11,6 @@ Attention : 0 et 1 ne sont pas des nombres premiers. Gérez les erreurs d’argu
  */
 
 
-
 class Terre10
 {
     static void Main()
