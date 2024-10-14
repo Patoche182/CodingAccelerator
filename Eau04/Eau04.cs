@@ -1,5 +1,5 @@
-﻿/*     04 - Prochain nombre premier - 04
-Créez un programme qui affiche le premier nombre premier supérieur au nombre donné en argument.
+﻿/*     04 - Prochain number premier - 04
+Créez un programme qui affiche le premier number premier supérieur au number donné en argument.
 
 Exemples d’utilisation :
 $> python exo.py 14
@@ -12,62 +12,86 @@ Afficher -1 si le paramètre est négatif ou mauvais.
 
 class Eau04
 {
-    // METHODE RESOLUTION
-    // METHODE UTILITAIRE
     // GESTION ERREUR
-
-    static void Main(string[] args)
+    public static bool IsValidArguments(string[] arguments)
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Epreuve de l'Eau04 !");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-
-        int nombreDonne;
-        if (args.Length == 0) // Bizare à checker
+        if (arguments.Length == 1)
         {
-            Console.WriteLine("Veuillez entrer un nombre en argument : ");
-            string input = Console.ReadLine();
-            if (!int.TryParse(input, out nombreDonne) || nombreDonne < 0)
-            {
-                Console.WriteLine("Veuillez entrer un nombre valide et positif.");
-                Console.WriteLine("-1");
-                return;
-            }
+            return true;
         }
         else
         {
-            if (!int.TryParse(args[0], out nombreDonne) || nombreDonne < 0)
-            {
-                Console.WriteLine("Veuillez entrer un nombre valide et positif.");
-                Console.WriteLine("-1");
-                return;
-            }
+            Console.WriteLine("Error ! Please only one argument.");
+            return false;
         }
-
-        int nombrePremierSuivant = TrouverNombrePremierSuivant(nombreDonne);
-        Console.WriteLine($"Le premier nombre premier supérieur à {nombreDonne} est : {nombrePremierSuivant}");
+    }
+    public static bool IsValidNumber(string number)
+    {
+        if (int.TryParse(number, out _))
+        {
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("Error ! Please only number.");
+            return false;
+        }
+    }
+    public static bool IsPositiveNumber(int number)
+    {
+        if (number > 0)
+        {
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("-1");
+            return false;
+        }
     }
 
-    static bool EstPremier(int nombre)
+
+    // METHODE RESOLUTION
+    static void Main(string[] args)
     {
-        if (nombre <= 1)
-            return false;
-        for (int i = 2; i <= Math.Sqrt(nombre); i++) // for (int i = 2; i <= nombre; i++) à tester!
+        if (Eau04.IsValidArguments(args))
         {
-            if (nombre % i == 0)
+            string argument = args[0];
+            if (Eau04.IsValidNumber(argument))
+            {
+                int number = int.Parse(args[0]);
+                int result = FindNextPrimeNumber(number);
+                if (result == -1)
+                {
+                    return;
+                }
+                Console.WriteLine($"Le premier nombre premier supérieur à {number} est : {result}");
+            }
+        }
+    }
+
+
+    // METHODE UTILITAIRE
+    static bool isPrimeNumber(int number)
+    {
+        if (number <= 1)
+            return false;
+        for (int i = 2; i <= Math.Sqrt(number); i++) // for (int i = 2; i <= number; i++) à tester!
+        {
+            if (number % i == 0)
                 return false;
         }
         return true;
     }
 
-    static int TrouverNombrePremierSuivant(int nombre)
+    static int FindNextPrimeNumber(int number)
     {
-        int nombreSuivant = nombre + 1;
+        int nextNumber = number + 1;
         while (true)
         {
-            if (EstPremier(nombreSuivant))
-                return nombreSuivant;
-            nombreSuivant++;
+            if (isPrimeNumber(nextNumber))
+                return nextNumber;
+            nextNumber++;
         }
     }
 }
