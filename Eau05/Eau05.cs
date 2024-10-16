@@ -18,14 +18,14 @@ class Eau05
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Epreuve de l'Eau05 !");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("Epreuve de l'Eau05 !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
 
         if (args.Length < 2)
         {
             Console.WriteLine("Veuillez fournir deux chaînes de caractères en argument : ");
-            string input = Console.ReadLine(); // utiliser le args[] truc bidule
+            string input = Console.ReadLine(); // utiliser le args[] truc biduuuule
             string[] inputArray = input.Split(' ');
             if (inputArray.Length < 2) // si Différent de 2
             {
