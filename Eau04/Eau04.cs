@@ -21,7 +21,7 @@ class Eau04
         }
         else
         {
-            Console.WriteLine("Error ! Please only one argument.");
+            Console.WriteLine("Error ! Please enter only one argument.");
             return false;
         }
     }
@@ -33,7 +33,7 @@ class Eau04
         }
         else
         {
-            Console.WriteLine("Error ! Please only number.");
+            Console.WriteLine("Error ! Please enter only number.");
             return false;
         }
     }
