@@ -16,7 +16,6 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 class Eau05
 {
-
     static void Main(string[] args)
     {
         //Console.WriteLine("==========-==========-==========-==========-==========");
@@ -48,5 +47,4 @@ class Eau05
         // Utilisez la méthode Contains pour vérifier si la sous-chaîne est présente dans la chaîne.
         return chaine.Contains(sousChaine); // Ne pas utiliser .Contains() => boucle for ... + Considérer les casse !!!
     }
-
 }
