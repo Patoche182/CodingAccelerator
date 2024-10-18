@@ -54,3 +54,14 @@ class Terre00
 //        Console.WriteLine();
 //    }
 //}
+
+
+//static void Main()
+//{
+//    for (int i=97; i<=122; i++)
+//    {
+//        string lettre = "";
+//        lettre += (char)i;
+//        Console.WriteLine(lettre);
+//    }
+//}
