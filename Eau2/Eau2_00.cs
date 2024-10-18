@@ -19,7 +19,7 @@ namespace Eau2 // byHarry
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Hello, Eau02!");
 
             // centaine
             for (int i = 0; i < 10; i++)
