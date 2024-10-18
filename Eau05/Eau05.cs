@@ -18,9 +18,9 @@ class Eau05
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Epreuve de l'Eau05 !");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("Epreuve de l'Eau05 !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
 
         if (args.Length < 2)
         {
