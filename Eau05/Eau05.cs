@@ -18,9 +18,9 @@ class Eau05
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Epreuve de l'Eau05 !");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("Epreuve de l'Eau05 !");
+        Console.WriteLine("==========-==========-==========-==========-==========");
 
         if (args.Length < 2)
         {
@@ -35,6 +35,9 @@ class Eau05
             args = inputArray;
         }
 
+
+
+
         string chaine1 = args[0];
         string chaine2 = args[1];
 
@@ -42,9 +45,15 @@ class Eau05
         Console.WriteLine(trouve);
     }
 
+
+
+
+
     static bool TrouverSousChaine(string chaine, string sousChaine)
     {
         // Utilisez la méthode Contains pour vérifier si la sous-chaîne est présente dans la chaîne.
         return chaine.Contains(sousChaine); // Ne pas utiliser .Contains() => boucle for ... + Considérer les casse !!!
     }
 }
+
+
