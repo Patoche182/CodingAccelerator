@@ -15,10 +15,6 @@ Fonctions interdites:
 -En Ruby: even? et odd ?
 */
 
-
-
-
-
 class Terre04
 {
     static void Main()
@@ -42,7 +38,7 @@ class Terre04
             }
             else
             {
-                Console.WriteLine("Tu ne me la mettras pas à l'envers. Il me faut un chiffre entier !");
+                Console.WriteLine("Tu ne me la mettras pas à l'envers.");
             }
             Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
