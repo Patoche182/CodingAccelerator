@@ -27,7 +27,7 @@ class Terre00
 }
 
 
-// Méthode 1 :
+// Méthode 1 (moyen) :
 //class Terre00
 //{
 //    static void Main()
