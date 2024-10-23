@@ -50,7 +50,6 @@ class Eau04
         }
     }
 
-
     // METHODE RESOLUTION
     static void Main(string[] args)
     {

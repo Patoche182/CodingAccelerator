@@ -26,7 +26,7 @@ class Eau05
         // GESTION ERREUR
         if (arguments.Length != 2)
         {
-            Console.WriteLine("Veuillez fournir deux argument : ");
+            Console.WriteLine("Veuillez fournir 2 argument :");
             return;
         }
 
