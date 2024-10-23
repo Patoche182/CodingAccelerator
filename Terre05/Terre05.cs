@@ -21,10 +21,10 @@ class Terre05
 {
     static void Main()
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        Console.WriteLine("Cette console récupère en [Entrée] 2 nombres à diviser et renvoi en [Sortie] le résultat. \nIl renvoi aussi le reste de la division."); // exemple 5/2 = 2 : % = 1
-        Console.WriteLine("==========-==========-==========-==========-==========");
+        //Console.WriteLine("==========-==========-==========-==========-==========");
+        //Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
+        //Console.WriteLine("Cette console récupère en [Entrée] 2 nombres à diviser et renvoi en [Sortie] le résultat. \nIl renvoi aussi le reste de la division."); // exemple 5/2 = 2 : % = 1
+        //Console.WriteLine("==========-==========-==========-==========-==========");
 
         do
         {
