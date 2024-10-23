@@ -8,6 +8,10 @@ $> python exo.py
 $>
 */
 
+// METHODE RESOLUTION
+// METHODE UTILITAIRE
+// GESTION ERREUR
+
 class Eau01
 {
     static void Main()

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Eau05": {
+      "commandName": "Project",
+      "commandLineArgs": "bonjour jour"
+    }
+  }
+}

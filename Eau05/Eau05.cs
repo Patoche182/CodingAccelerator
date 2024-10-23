@@ -14,46 +14,51 @@ error
 Afficher error et quitter le programme en cas de problèmes d’arguments.
  */
 
+// METHODE RESOLUTION
+// METHODE UTILITAIRE
+// GESTION ERREUR
+
 class Eau05
 {
-    static void Main(string[] args)
+    // METHODE RESOLUTION
+    static void Main(string[] arguments)
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("Epreuve de l'Eau05 !");
-        Console.WriteLine("==========-==========-==========-==========-==========");
-
-        if (args.Length < 2)
+        // GESTION ERREUR
+        if (arguments.Length != 2)
         {
-            Console.WriteLine("Veuillez fournir deux chaînes de caractères en argument : ");
-            string input = Console.ReadLine(); // utiliser le args[] truc biduuuule
-            string[] inputArray = input.Split(' ');
-            if (inputArray.Length < 2) // si Différent de 2
-            {
-                Console.WriteLine("Veuillez fournir deux chaînes de caractères valides.");
-                return;
-            }
-            args = inputArray;
+            Console.WriteLine("Veuillez fournir deux argument : ");
+            return;
         }
 
+        foreach (string argument in arguments)
+        {
+            bool isNumeric = true;
 
+            foreach (char character in argument)
+            {
+                if (!char.IsDigit(character))
+                {
+                    isNumeric = false;
+                    break;
+                }
+            }
+            if (isNumeric)
+            {
+                Console.WriteLine("error");
+                return;
+            }
+        }
 
-
-        string chaine1 = args[0];
-        string chaine2 = args[1];
+        string chaine1 = arguments[0];
+        string chaine2 = arguments[1];
 
         bool trouve = TrouverSousChaine(chaine1, chaine2);
         Console.WriteLine(trouve);
     }
 
-
-
-
-
+    // METHODE UTILITAIRE
     static bool TrouverSousChaine(string chaine, string sousChaine)
     {
-        // Utilisez la méthode Contains pour vérifier si la sous-chaîne est présente dans la chaîne.
         return chaine.Contains(sousChaine); // Ne pas utiliser .Contains() => boucle for ... + Considérer les casse !!!
     }
 }
-
-

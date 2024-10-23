@@ -70,7 +70,6 @@ class Eau04
         }
     }
 
-
     // METHODE UTILITAIRE
     static bool isPrimeNumber(int number)
     {
