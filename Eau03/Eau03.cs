@@ -9,7 +9,6 @@ $>
 Afficher -1 si le paramètre est négatif ou mauvais.
 */
 
-using System.Net.Http.Headers;
 
 class Eau03
 {
