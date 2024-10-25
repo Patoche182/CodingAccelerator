@@ -10,6 +10,7 @@ Afficher -1 si le paramètre est négatif ou mauvais.
 
  */
 
+
 class Eau04
 {
     // GESTION ERREUR
