@@ -4,12 +4,9 @@ Créez un programme qui affiche le premier number premier supérieur au number d
 Exemples d’utilisation :
 $> python exo.py 14
 17
-$>
 
 Afficher -1 si le paramètre est négatif ou mauvais.
-
  */
-
 
 class Eau04
 {
