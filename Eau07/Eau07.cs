@@ -29,7 +29,7 @@ class Eau07
 
     static void AfficherSeparateurs()
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========");
     }
 
     static string MettrePremiereLettreMajuscule(string phrase)
