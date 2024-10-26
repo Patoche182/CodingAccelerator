@@ -16,9 +16,9 @@ class Eau06
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("Epreuve de l'Eau06 !");
-        Console.WriteLine("==========-==========-==========-==========-==========");
+        //Console.WriteLine("==========-==========-==========-==========-==========");
+        //Console.WriteLine("Epreuve de l'Eau06 !");
+        //Console.WriteLine("==========-==========-==========-==========-==========");
 
         if (args.Length == 0)
         {
