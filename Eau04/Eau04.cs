@@ -10,7 +10,6 @@ Afficher -1 si le paramètre est négatif ou mauvais.
 
 class Eau04
 {
-
     // GESTION ERREUR
     public static bool IsValidArguments(string[] arguments)
     {
@@ -24,7 +23,7 @@ class Eau04
             return false;
         }
     }
-    
+
     public static bool IsValidNumber(string number)
     {
         if (int.TryParse(number, out _))
@@ -37,7 +36,7 @@ class Eau04
             return false;
         }
     }
-    
+
     public static bool IsPositiveNumber(int number)
     {
         if (number > 0)
@@ -50,7 +49,6 @@ class Eau04
             return false;
         }
     }
-
 
     // METHODE RESOLUTION
     static void Main(string[] args)
@@ -70,7 +68,6 @@ class Eau04
             }
         }
     }
-
 
     // METHODE UTILITAIRE
     static bool isPrimeNumber(int number)

@@ -20,7 +20,6 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 class Eau05
 {
-
     // METHODE RESOLUTION
     static void Main(string[] arguments)
     {
@@ -40,7 +39,6 @@ class Eau05
             Console.WriteLine(isFound);
         }
     }
-
 
     // GESTION ERREUR
     public static bool IsValidArguments(string[] arguments)
@@ -74,7 +72,6 @@ class Eau05
         }
         return isString;
     }
-
 
     // METHODE UTILITAIRE
     static bool ContainSubstring(string chaine, string sousChaine)
