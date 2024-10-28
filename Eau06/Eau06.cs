@@ -12,15 +12,16 @@ error
 Afficher error et quitter le programme en cas de problèmes d’arguments.
  */
 
+// METHODE RESOLUTION 
+// METHODE UTILITAIRE 
+// GESTION ERREUR 
+
 class Eau06
 {
+    // METHODE RESOLUTION 
     static void Main(string[] args)
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Epreuve de l'Eau06 !");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-
-        if (args.Length == 0)
+        if (args.Length == 1)
         {
             Console.WriteLine("Veuillez fournir une chaîne de caractères en argument : ");
             string input = Console.ReadLine();
@@ -28,10 +29,13 @@ class Eau06
         }
         else
         {
-            AfficherMajusculeUneLettreSurDeux(args[0]);
+            Console.WriteLine("Error");
+            return;
+            //AfficherMajusculeUneLettreSurDeux(args[0]);
         }
     }
 
+    // METHODE UTILITAIRE 
     static void AfficherMajusculeUneLettreSurDeux(string chaine)
     {
         bool majuscule = true;
