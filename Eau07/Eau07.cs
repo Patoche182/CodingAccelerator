@@ -13,7 +13,9 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
  */
 
 class Eau07
+
 {
+
     static void Main(string[] args)
     {
         AfficherSeparateurs();
@@ -29,12 +31,12 @@ class Eau07
 
     static void AfficherSeparateurs()
     {
-        Console.WriteLine("==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========-==========");
     }
 
     static string MettrePremiereLettreMajuscule(string phrase)
     {
-        string[] mots = phrase.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries); // Splitter par espace uniquement
+        string[] mots = phrase.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries);  // Splitter par espace uniquement
         for (int i = 0; i < mots.Length; i++)
         {
             mots[i] = PremierCaractereMajuscule(mots[i]);
@@ -51,6 +53,7 @@ class Eau07
         return char.ToUpper(mot[0]) + mot.Substring(1).ToLower();
     }
 }
+
 
 
 /*
