@@ -13,9 +13,7 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
  */
 
 class Eau07
-
 {
-
     static void Main(string[] args)
     {
         AfficherSeparateurs();
@@ -31,7 +29,7 @@ class Eau07
 
     static void AfficherSeparateurs()
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
+        Console.WriteLine("==========-==========-==========-==========");
     }
 
     static string MettrePremiereLettreMajuscule(string phrase)
@@ -53,8 +51,6 @@ class Eau07
         return char.ToUpper(mot[0]) + mot.Substring(1).ToLower();
     }
 }
-
-
 
 /*
 class Eau07
