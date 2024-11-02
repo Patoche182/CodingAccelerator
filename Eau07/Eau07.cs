@@ -19,7 +19,6 @@ class Eau07
         AfficherSeparateurs();
         Console.WriteLine("Epreuve de l'Eau07 !");
         AfficherSeparateurs();
-
         Console.WriteLine("Entrez une phrase :");
         string phrase = Console.ReadLine();
         string nouvellePhrase = MettrePremiereLettreMajuscule(phrase);
