@@ -27,7 +27,7 @@ class Terre01
 // Methode 0:
 //    string chemin = Process.GetCurrentProcess().MainModule.FileName;  //Obtenir le chemin d'accès complet du programme en cours d'exécution
 //    string fichier = System.IO.Path.GetFileName(chemin);              //Extraire le nom du fichier à partir du chemin complet
-//    Console.WriteLine(fichier);                                        //Afficher le nom du fichier
+//    Console.WriteLine(fichier);                                       //Afficher le nom du fichier
 
 // Methode 1:
 //    Console.WriteLine($"Le nom du programme est : {AppDomain.CurrentDomain.FriendlyName}" + ".cs");
